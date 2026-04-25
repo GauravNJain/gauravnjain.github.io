@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>Gaurav N Jain</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://gauravnjain.github.io/</id>
+  <link href="https://gauravnjain.github.io/" rel="alternate"/>
+  <link href="https://gauravnjain.github.io/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, Gaurav N Jain</rights>
+  <subtitle>CTF Player | Security Analyst</subtitle>
+  <title>Gaurav N Jain's Blog</title>
+  <updated>2026-04-25T13:46:58.480Z</updated>
+  <entry>
+    <author>
+      <name>Gaurav N Jain</name>
+    </author>
+    <category term="General" scheme="https://gauravnjain.github.io/categories/General/"/>
+    <id>https://gauravnjain.github.io/2026/04/20/welcome/</id>
+    <link href="https://gauravnjain.github.io/2026/04/20/welcome/"/>
+    <published>2026-04-20T00:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>Welcome to my cybersecurity portfolio and blog. This site features writeups from various CTFs, security research projects, and my]]>
+    </summary>
+    <title>Welcome to my Portfolio</title>
+    <updated>2026-04-25T13:46:58.480Z</updated>
+  </entry>
+</feed>
