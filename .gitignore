@@ -1,0 +1,10 @@
+node_modules/
+public/
+db.json
+.cache/
+.DS_Store
+.idea/
+.vscode/
+*.log
+temp_repos/
+gh-pages/
