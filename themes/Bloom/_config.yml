@@ -1,0 +1,108 @@
+# ==========================================
+# Bloom Theme Configuration
+# ==========================================
+
+# ---- Navigation Menu ----
+nav:
+  Home: /
+  About: /about/
+  Articles: /archives/
+  Categories: /categories/
+  Links: /links/
+
+# ---- Profile / Intro ----
+profile:
+  enabled: true
+  avatar: /images/avatar.png
+  title: "Gaurav N Jain"
+  subtitle: "CTF Player | Security Analyst"
+  description: |
+    Chasing flags and writing code at the edge of security.
+
+# ---- Homepage Columns (Core Feature) ----
+# Enable categorized columns on homepage
+# Max 2 columns supported
+columns:
+  enabled: true
+  layout: two-column           # single-column | two-column
+  items:
+    - name: CTF Writeups            # Display name
+      category: "CTF Writeups"        # Category slug
+      limit: 10                # Number of posts to show
+      show_date: true
+    - name: Projects
+      category: Projects
+      limit: 10
+      show_date: true
+
+# Fallback when columns disabled
+default_list:
+  title: "Recent Posts"
+  limit: 10
+  show_date: true
+
+# ---- Search ----
+search:
+  enabled: true
+  path: search.xml
+  placeholder: "Search..."
+
+# ---- Social Links ----
+social:
+  github: "https://github.com/GauravNJain"
+  linkedin: "https://linkedin.com/in/GauravNJain"
+  twitter: "https://twitter.com/gauravnjain_"
+  ctftime: "https://ctftime.org/user/GauravNJain"
+  email: "mailto:gauravnjain@proton.me"
+  rss: /atom.xml
+
+# ---- Footer ----
+footer:
+  copyright_since: 2026
+  powered_by: true
+  theme_info: true
+
+# ---- Appearance ----
+colorscheme: dark
+
+# ---- Layout Width ----
+layout:
+  page_width: 60          # 整体页面最大宽度 (rem)
+  content_width: 900      # 文章内容区宽度 (px)
+  mobile_padding: 12      # 移动端两侧边距 (px)
+
+# ---- Logo ----
+logo:
+  enabled: false
+  image: /images/logo.png
+  width: 100
+  height: 100
+
+# ---- Post Settings ----
+post:
+  show_updated: true
+  show_wordcount: false
+  show_readtime: false
+  excerpt_link: "Read More"
+  toc: true
+
+# ---- Code Highlight ----
+highlight:
+  theme: tomorrow-night
+  copy_button: true
+
+# ---- Comments ----
+comments:
+  enabled: false
+  provider: ""                 # disqus | utterances | giscus
+
+# ---- Analytics ----
+analytics:
+  google: ""
+  baidu: ""
+
+# ---- 404 Page ----
+error_404:
+  enabled: true
+  title: "Page Not Found"
+  description: "The page you're looking for doesn't exist."

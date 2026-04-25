@@ -1,0 +1,49 @@
+<div class="category-page">
+  <h1 class="category-title">
+    Category: <span><%= page.category %></span>
+  </h1>
+  <p class="category-count"><%= page.posts.length %> total posts</p>
+  
+  <% 
+    var current_cat = site.categories.findOne({name: page.category});
+    var sub_cats = site.categories.find({parent: current_cat._id}).sort('name');
+  %>
+
+  <% if (sub_cats.length > 0) { %>
+    <div class="sub-categories" style="margin-bottom: 40px;">
+      <h2 class="category-name" style="font-size: 1.2rem; color: #2bbc8a; margin-bottom: 15px;">Sub-categories</h2>
+      <div class="categories-list" style="display: flex; flex-wrap: wrap; gap: 10px;">
+        <% sub_cats.each(function(sub) { %>
+          <a href="<%- url_for(sub.path) %>" class="category-item" style="font-size: 0.9rem; color: #908d8d; background: #232527; padding: 5px 10px; border-radius: 4px;">
+            <%= sub.name %>
+            <span class="count" style="margin-left: 5px; color: #6e6e6e;">(<%= sub.posts.length %>)</span>
+          </a>
+        <% }); %>
+      </div>
+    </div>
+  <% } %>
+
+  <div class="category-posts-section">
+    <% if (sub_cats.length > 0) { %>
+      <h2 class="category-name" style="font-size: 1.2rem; color: #2bbc8a; margin-bottom: 15px;">Posts</h2>
+    <% } %>
+    <ul class="archive-posts">
+      <% 
+      var postsArray = page.posts.toArray ? page.posts.toArray() : page.posts;
+      postsArray.sort(function(a, b){ return b.date - a.date; }).forEach(function(post) { 
+      %>
+        <li class="archive-post-item">
+          <span class="archive-post-date"><%= date(post.date, 'YYYY-MM-DD') %></span>
+          <a href="<%- url_for(post.path) %>" class="archive-post-link">
+            <% if (post.categories && post.categories.length > 1) { %>
+              <span class="post-ctf-name" style="color: #6e6e6e; font-size: 0.85rem; margin-right: 5px;">[<%= post.categories.data[1].name %>]</span>
+            <% } %>
+            <%= post.title || '(Untitled)' %>
+          </a>
+        </li>
+      <% }); %>
+    </ul>
+  </div>
+
+  <%- partial('_partial/pagination') %>
+</div>

@@ -1,0 +1,22 @@
+<div class="tag-page">
+  <h1 class="tag-title">
+    Tag: <span><%= page.tag %></span>
+  </h1>
+  <p class="tag-count"><%= page.posts.length %> posts</p>
+
+  <ul class="archive-posts">
+    <% 
+    var postsArray = page.posts.toArray ? page.posts.toArray() : page.posts;
+    postsArray.sort(function(a, b){ return b.date - a.date; }).forEach(function(post) { 
+    %>
+      <li class="archive-post-item">
+        <span class="archive-post-date"><%= date(post.date, 'YYYY-MM-DD') %></span>
+        <a href="<%- url_for(post.path) %>" class="archive-post-link">
+          <%= post.title || '(Untitled)' %>
+        </a>
+      </li>
+    <% }); %>
+  </ul>
+
+  <%- partial('_partial/pagination') %>
+</div>

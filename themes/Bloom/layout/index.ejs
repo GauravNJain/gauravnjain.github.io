@@ -1,0 +1,29 @@
+<div class="home-page">
+  <% if (theme.columns && theme.columns.enabled && theme.columns.items && theme.columns.items.length > 0) { %>
+    <%- partial('_partial/columns') %>
+  <% } else { %>
+    <section class="post-list-section">
+      <% if (page.current === 1) { %>
+        <h2 class="section-title"><%= theme.default_list.title || 'Recent Posts' %></h2>
+      <% } else { %>
+        <h2 class="section-title">Posts - Page <%= page.current %></h2>
+      <% } %>
+      <ul class="post-list">
+        <%
+        // Use page.posts for pagination, sorted by date descending
+        page.posts.sort('-date').each(function(post) {
+        %>
+          <li class="post-list-item">
+            <a href="<%- url_for(post.path) %>" class="post-link">
+              <%= post.title || '(Untitled)' %>
+            </a>
+            <% if (theme.default_list.show_date !== false) { %>
+              <span class="post-date"><%= date(post.date, 'YYYY-MM-DD') %></span>
+            <% } %>
+          </li>
+        <% }); %>
+      </ul>
+      <%- partial('_partial/pagination') %>
+    </section>
+  <% } %>
+</div>
