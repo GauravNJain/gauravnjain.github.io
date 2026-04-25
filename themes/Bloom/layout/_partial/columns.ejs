@@ -17,26 +17,34 @@ var items = theme.columns.items || [];
 
       <ul class="column-posts">
         <%
-        // Filter posts by category
+        // Convert to array and filter posts by category
         var categoryName = column.category.toLowerCase();
-        var categoryPosts = site.posts.filter(function(post) {
+        var allPosts = site.posts.toArray ? site.posts.toArray() : (site.posts || []);
+        
+        var categoryPosts = allPosts.filter(function(post) {
           if (!post.categories || post.categories.length === 0) return false;
-          return post.categories.some(function(cat) {
-            return cat.name.toLowerCase() === categoryName ||
-                   cat.slug.toLowerCase() === categoryName.replace(/ /g, '-');
+          var cats = post.categories.toArray ? post.categories.toArray() : post.categories;
+          return cats.some(function(cat) {
+            var catName = cat.name || "";
+            var catSlug = cat.slug || "";
+            return catName.toLowerCase() === categoryName ||
+                   catSlug.toLowerCase() === categoryName.replace(/ /g, '-');
           });
-        }).sort('-date');
+        }).sort(function(a, b) { return b.date - a.date; });
 
         var limit = column.limit || 10;
         var displayPosts = categoryPosts.slice(0, limit);
 
-        if (displayPosts.length > 0) {
+        if (displayPosts && displayPosts.length > 0) {
           displayPosts.forEach(function(post) {
         %>
           <li class="column-post-item">
             <a href="<%- url_for(post.path) %>" class="post-link">
-              <% if (post.categories && post.categories.length > 1) { %>
-                <span class="post-ctf-name" style="color: #6e6e6e; font-size: 0.85rem; margin-right: 5px;">[<%= post.categories.data[1].name %>]</span>
+              <% 
+              var postCats = post.categories.toArray ? post.categories.toArray() : (post.categories.data || []);
+              if (postCats.length > 1) { 
+              %>
+                <span class="post-ctf-name" style="color: #6e6e6e; font-size: 0.85rem; margin-right: 5px;">[<%= postCats[1].name %>]</span>
               <% } %>
               <%= post.title || '(Untitled)' %>
             </a>
@@ -53,7 +61,7 @@ var items = theme.columns.items || [];
       </ul>
 
       <% if (categoryPosts.length > limit) { %>
-        <a href="<%- url_for('/categories/' + column.category + '/') %>" class="view-all">
+        <a href="<%- url_for(targetCat ? targetCat.path : '/categories/' + column.category.toLowerCase().replace(/ /g, '-') + '/') %>" class="view-all">
           View All (<%= categoryPosts.length %>) &rarr;
         </a>
       <% } %>
