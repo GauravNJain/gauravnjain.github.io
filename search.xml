@@ -8,4 +8,16 @@
 <p>Use the navigation menu above to explore my <strong>Articles</strong> and <strong>Categories</strong>.</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>FileGuard</title>
+    <url>/2026/04/27/fetched/projects/FileGuard/FileGuard/</url>
+    <content><![CDATA[<p><strong>FileGuard - File Hash Checker</strong></p>
+<p>A simple shell script tool written in bash to generate file hashes and verify file integrity.</p>
+<p>here’s a link to the github repo:<br><a href="https://github.com/GauravNJain/FileGuard">https://github.com/GauravNJain/FileGuard</a></p>
+]]></content>
+      <categories>
+        <category>Projects</category>
+        <category>FileGuard</category>
+      </categories>
+  </entry>
 </search>
