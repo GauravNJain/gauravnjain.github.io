@@ -10,22 +10,22 @@
   <rights>All rights reserved 2026, Gaurav N Jain</rights>
   <subtitle>CTF Player | Security Analyst</subtitle>
   <title>Gaurav N Jain's Blog</title>
-  <updated>2026-04-27T01:55:37.578Z</updated>
+  <updated>2026-04-27T08:06:17.937Z</updated>
   <entry>
     <author>
       <name>Gaurav N Jain</name>
     </author>
     <category term="Projects" scheme="https://gauravnjain.github.io/categories/Projects/"/>
     <category term="FileGuard" scheme="https://gauravnjain.github.io/categories/Projects/FileGuard/"/>
-    <id>https://gauravnjain.github.io/2026/04/27/fetched/projects/FileGuard/FileGuard/</id>
-    <link href="https://gauravnjain.github.io/2026/04/27/fetched/projects/FileGuard/FileGuard/"/>
-    <published>2026-04-27T01:55:37.000Z</published>
+    <id>https://gauravnjain.github.io/2026/04/27/fetched/projects/FileGuard/FileGuard%20-%20File%20Hash%20Checker/</id>
+    <link href="https://gauravnjain.github.io/2026/04/27/fetched/projects/FileGuard/FileGuard%20-%20File%20Hash%20Checker/"/>
+    <published>2026-04-27T08:06:17.000Z</published>
     <summary>
-      <![CDATA[<p><strong>FileGuard - File Hash Checker</strong></p>
-<p>A simple shell script tool written in bash to generate file hashes and verify file]]>
+      <![CDATA[<p align="center">
+  <img src="https://github.com/GauravNJain/FileGuard/blob/main/imgs/FileGuardASCII.png" alt="File Hash Checker Logo"]]>
     </summary>
-    <title>FileGuard</title>
-    <updated>2026-04-27T01:55:37.578Z</updated>
+    <title>FileGuard   File Hash Checker</title>
+    <updated>2026-04-27T08:06:17.937Z</updated>
   </entry>
   <entry>
     <author>
@@ -38,6 +38,6 @@
       <![CDATA[<p>Welcome to my cybersecurity portfolio and blog. This site features writeups from various CTFs, security research projects, and my]]>
     </summary>
     <title>Welcome to my Portfolio</title>
-    <updated>2026-04-27T01:55:23.321Z</updated>
+    <updated>2026-04-27T08:06:09.774Z</updated>
   </entry>
 </feed>

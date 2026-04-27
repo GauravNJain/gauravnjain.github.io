@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="referrer" content="no-referrer">
 
-<title>FileGuard | Gaurav N Jain&#39;s Blog</title>
+<title>FileGuard   File Hash Checker | Gaurav N Jain&#39;s Blog</title>
 
 
 <meta name="description" content="Personal blog and portfolio of Gaurav N Jain, focusing on CTF writeups, security research, and tools.">
@@ -19,7 +19,7 @@
 
 
 <!-- Canonical -->
-<link rel="canonical" href="/2026/04/27/fetched/projects/FileGuard/FileGuard/">
+<link rel="canonical" href="/2026/04/27/fetched/projects/FileGuard/FileGuard%20-%20File%20Hash%20Checker/">
 
 <!-- Favicon -->
 <link rel="icon" href="/images/favicon.ico">
@@ -31,8 +31,8 @@
 
 <!-- Open Graph -->
 <meta property="og:type" content="article">
-<meta property="og:title" content="FileGuard">
-<meta property="og:url" content="/2026/04/27/fetched/projects/FileGuard/FileGuard/">
+<meta property="og:title" content="FileGuard   File Hash Checker">
+<meta property="og:url" content="/2026/04/27/fetched/projects/FileGuard/FileGuard%20-%20File%20Hash%20Checker/">
 <meta property="og:site_name" content="Gaurav N Jain&#39;s Blog">
 
 <meta property="og:description" content="Personal blog and portfolio of Gaurav N Jain, focusing on CTF writeups, security research, and tools.">
@@ -40,7 +40,7 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="FileGuard">
+<meta name="twitter:title" content="FileGuard   File Hash Checker">
 
 <meta name="twitter:description" content="Personal blog and portfolio of Gaurav N Jain, focusing on CTF writeups, security research, and tools.">
 
@@ -160,7 +160,7 @@
         <div class="page-layout">
           <article class="post">
   <header class="post-header">
-  <h1 class="post-title">FileGuard</h1>
+  <h1 class="post-title">FileGuard   File Hash Checker</h1>
 
   <div class="post-meta">
     <span class="meta-item">
@@ -194,11 +194,52 @@
 
 
   
+    <nav class="toc">
+  <h3 class="toc-title">Table of Contents</h3>
+  <div class="toc-list">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%F0%9F%94%90-FileGuard-File-Hash-Checker"><span class="toc-text">🔐 FileGuard - File Hash Checker</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%93%8C-About"><span class="toc-text">📌 About</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%9A%80-Features"><span class="toc-text">🚀 Features</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%9B%A0-Installation"><span class="toc-text">🛠 Installation</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%8F%83-Usage"><span class="toc-text">🏃 Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%96%BC%EF%B8%8F-Screenshots"><span class="toc-text">🖼️ Screenshots</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%91%A4-Author"><span class="toc-text">👤 Author</span></a></li></ol></li></ol>
+  </div>
+</nav>
+
+  
 
   <div class="post-content">
-  <p><strong>FileGuard - File Hash Checker</strong></p>
-<p>A simple shell script tool written in bash to generate file hashes and verify file integrity.</p>
-<p>here’s a link to the github repo:<br><a target="_blank" rel="noopener" href="https://github.com/GauravNJain/FileGuard">https://github.com/GauravNJain/FileGuard</a></p>
+  <p align="center">
+  <img src="https://github.com/GauravNJain/FileGuard/blob/main/imgs/FileGuardASCII.png" alt="File Hash Checker Logo" width="875">
+</p>
+
+<h1 id="🔐-FileGuard-File-Hash-Checker"><a href="#🔐-FileGuard-File-Hash-Checker" class="headerlink" title="🔐 FileGuard - File Hash Checker"></a>🔐 FileGuard - File Hash Checker</h1><p>A simple shell script tool to <strong>generate file hashes</strong> and <strong>verify file integrity</strong>.</p>
+<hr>
+<h3 id="📌-About"><a href="#📌-About" class="headerlink" title="📌 About"></a>📌 About</h3><p><strong>File Hash Checker</strong> is a lightweight and easy-to-use tool that allows users to:  </p>
+<p>🔍 <strong>Generate file hashes</strong> using <strong>MD5, SHA1, or SHA256</strong>.<br>✅ <strong>Verify file integrity</strong> by comparing the hash of the original and copied files.  </p>
+<hr>
+<h3 id="🚀-Features"><a href="#🚀-Features" class="headerlink" title="🚀 Features"></a>🚀 Features</h3><p>📜 <strong>Menu-based interface</strong> for easy navigation.<br>🔄 <strong>Supports multiple hashing algorithms</strong>: MD5, SHA1, SHA256.<br>⚠️ <strong>Error handling</strong> for missing files and invalid inputs.  </p>
+<hr>
+<h3 id="🛠-Installation"><a href="#🛠-Installation" class="headerlink" title="🛠 Installation"></a>🛠 Installation</h3><p>Clone the repository and give the script execution permissions:  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/GauravNJain/FileGuard.git</span><br><span class="line">cd FileGuard</span><br><span class="line">chmod +x flieguard.sh</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="🏃-Usage"><a href="#🏃-Usage" class="headerlink" title="🏃 Usage"></a>🏃 Usage</h3><p>Run the script:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./fileguard.sh</span><br></pre></td></tr></table></figure>
+<p>Follow the menu options to generate hashes or verify file integrity.</p>
+<hr>
+<h3 id="🖼️-Screenshots"><a href="#🖼️-Screenshots" class="headerlink" title="🖼️ Screenshots"></a>🖼️ Screenshots</h3><p>Here are some screenshots of the tool in action:</p>
+<p>🔢 Generating a file hash:</p>
+<p align="center">
+  <img src="https://github.com/GauravNJain/FileGuard/blob/main/imgs/FileGuardGenHash.png" alt="File Hash Checker Logo" width="450">
+</p>
+
+
+<p>🔍 Verifying file integrity:</p>
+<p align="center">
+  <img src="https://github.com/GauravNJain/FileGuard/blob/main/imgs/FileGuardIntCheck.png" alt="File Hash Checker Logo" width="450">
+</p>
+
+<hr>
+<h3 id="👤-Author"><a href="#👤-Author" class="headerlink" title="👤 Author"></a>👤 Author</h3><ul>
+<li>Developed by Gaurav N Jain</li>
+</ul>
+<p>📧 Contact: <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/gauravnjain/">LinkedIn Profile</a><br>Github Repo: <a target="_blank" rel="noopener" href="https://github.com/GauravNJain/FileGuard">link</a> </p>
 
 </div>
 
