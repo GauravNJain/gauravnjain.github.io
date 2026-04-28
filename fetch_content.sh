@@ -62,7 +62,7 @@ fetch_repo() {
             fi
         else
             # File has no front matter, create a new one
-            title=$(basename "$file" .md | sed 's/[-_]/ /g')
+            title=$(basename "$file" .md | sed 's/_/ /g')
             
             echo "---" > "$dest_file"
             echo "title: \"$title\"" >> "$dest_file"
@@ -75,6 +75,9 @@ fetch_repo() {
         
         # Optional: Clean up formatting issues common in manual writeups
         # Ensure there is a newline after the front matter if we injected it
+        
+        # Fix GitHub image URLs
+        sed -i 's|https://github.com/\([^/]*\)/\([^/]*\)/blob/|https://raw.githubusercontent.com/\1/\2/|g' "$dest_file"
     done
 }
 
