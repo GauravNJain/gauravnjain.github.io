@@ -9,10 +9,10 @@
 ]]></content>
   </entry>
   <entry>
-    <title>FileGuard   File Hash Checker</title>
+    <title>FileGuard - File Hash Checker</title>
     <url>/2026/04/28/fetched/projects/FileGuard/FileGuard%20-%20File%20Hash%20Checker/</url>
     <content><![CDATA[<p align="center">
-  <img src="https://github.com/GauravNJain/FileGuard/blob/main/imgs/FileGuardASCII.png" alt="File Hash Checker Logo" width="875">
+  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardASCII.png" alt="File Hash Checker Logo" width="875">
 </p>
 
 <h1 id="🔐-FileGuard-File-Hash-Checker"><a href="#🔐-FileGuard-File-Hash-Checker" class="headerlink" title="🔐 FileGuard - File Hash Checker"></a>🔐 FileGuard - File Hash Checker</h1><p>A simple shell script tool to <strong>generate file hashes</strong> and <strong>verify file integrity</strong>.</p>
@@ -33,13 +33,13 @@
 <h3 id="🖼️-Screenshots"><a href="#🖼️-Screenshots" class="headerlink" title="🖼️ Screenshots"></a>🖼️ Screenshots</h3><p>Here are some screenshots of the tool in action:</p>
 <p>🔢 Generating a file hash:</p>
 <p align="center">
-  <img src="https://github.com/GauravNJain/FileGuard/blob/main/imgs/FileGuardGenHash.png" alt="File Hash Checker Logo" width="450">
+  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardGenHash.png" alt="File Hash Checker Logo" width="450">
 </p>
 
 
 <p>🔍 Verifying file integrity:</p>
 <p align="center">
-  <img src="https://github.com/GauravNJain/FileGuard/blob/main/imgs/FileGuardIntCheck.png" alt="File Hash Checker Logo" width="450">
+  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardIntCheck.png" alt="File Hash Checker Logo" width="450">
 </p>
 
 <hr>
