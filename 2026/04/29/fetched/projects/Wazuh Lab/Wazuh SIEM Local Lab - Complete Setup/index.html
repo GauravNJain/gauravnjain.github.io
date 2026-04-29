@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="referrer" content="no-referrer">
+
+<title>Wazuh SIEM Local Lab - Complete Setup | Gaurav N Jain&#39;s Blog</title>
+
+
+<meta name="description" content="Personal blog and portfolio of Gaurav N Jain, focusing on CTF writeups, security research, and tools.">
+
+
+<meta name="author" content="Gaurav N Jain">
+
+
+<meta name="keywords" content="cybersecurity, ctf, writeups, security research, malware analysis, gaurav n jain">
+
+
+<!-- Canonical -->
+<link rel="canonical" href="/2026/04/29/fetched/projects/Wazuh%20Lab/Wazuh%20SIEM%20Local%20Lab%20-%20Complete%20Setup/">
+
+<!-- Favicon -->
+<link rel="icon" href="/images/favicon.ico">
+
+<!-- RSS -->
+
+<link rel="alternate" type="application/rss+xml" title="Gaurav N Jain&#39;s Blog" href="/atom.xml">
+
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Wazuh SIEM Local Lab - Complete Setup">
+<meta property="og:url" content="/2026/04/29/fetched/projects/Wazuh%20Lab/Wazuh%20SIEM%20Local%20Lab%20-%20Complete%20Setup/">
+<meta property="og:site_name" content="Gaurav N Jain&#39;s Blog">
+
+<meta property="og:description" content="Personal blog and portfolio of Gaurav N Jain, focusing on CTF writeups, security research, and tools.">
+
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Wazuh SIEM Local Lab - Complete Setup">
+
+<meta name="twitter:description" content="Personal blog and portfolio of Gaurav N Jain, focusing on CTF writeups, security research, and tools.">
+
+
+<!-- Theme Color -->
+<meta name="theme-color" content="#1d1f21">
+<meta name="msapplication-TileColor" content="#1d1f21">
+
+<!-- Stylesheets -->
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<!-- Custom Layout Variables -->
+
+<style>
+:root {
+  --page-width: 60rem;
+  --content-width: 900px;
+  --mobile-padding: 12px;
+}
+</style>
+
+<!-- Analytics -->
+
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+<body class="theme-dark">
+  <div class="container">
+    <header class="header">
+  <div class="header-inner">
+    <div class="header-brand">
+      
+      <a href="/" class="site-title">
+        Gaurav N Jain&#39;s Blog
+      </a>
+    </div>
+
+    <nav class="nav">
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        
+          
+          
+            
+            <li class="nav-item">
+              <a href="/"
+                 class="nav-link"
+                 >
+                Home
+              </a>
+            </li>
+            
+              <li class="nav-divider">|</li>
+            
+          
+            
+            <li class="nav-item">
+              <a href="/about/"
+                 class="nav-link"
+                 >
+                About
+              </a>
+            </li>
+            
+              <li class="nav-divider">|</li>
+            
+          
+            
+            <li class="nav-item">
+              <a href="/archives/"
+                 class="nav-link"
+                 >
+                Articles
+              </a>
+            </li>
+            
+              <li class="nav-divider">|</li>
+            
+          
+            
+            <li class="nav-item">
+              <a href="/categories/"
+                 class="nav-link"
+                 >
+                Categories
+              </a>
+            </li>
+            
+              <li class="nav-divider">|</li>
+            
+          
+            
+            <li class="nav-item">
+              <a href="/links/"
+                 class="nav-link"
+                 >
+                Links
+              </a>
+            </li>
+            
+          
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <main class="main">
+      
+        <div class="page-layout">
+          <article class="post">
+  <header class="post-header">
+  <h1 class="post-title">Wazuh SIEM Local Lab - Complete Setup</h1>
+
+  <div class="post-meta">
+    <span class="meta-item">
+      <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2z"/></svg>
+      <time datetime="2026-04-29">
+        2026-04-29
+      </time>
+    </span>
+
+    
+      <span class="meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12z"/></svg>
+        <time datetime="2026-04-29">
+          Updated on 2026-04-29
+        </time>
+      </span>
+    
+
+    
+      <span class="meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>
+        
+          <a href="/categories/Projects/">Projects</a>, 
+        
+          <a href="/categories/Projects/Wazuh-Lab/">Wazuh Lab</a>
+        
+      </span>
+    
+  </div>
+</header>
+
+
+  
+    <nav class="toc">
+  <h3 class="toc-title">Table of Contents</h3>
+  <div class="toc-list">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%F0%9F%9A%80-Wazuh-SIEM-Local-Lab-Complete-Setup"><span class="toc-text">🚀 Wazuh SIEM Local Lab - Complete Setup</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8F%97%EF%B8%8F-Lab-Architecture"><span class="toc-text">🏗️ Lab Architecture</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%96%A5%EF%B8%8F-Wazuh-Server"><span class="toc-text">🖥️ Wazuh Server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%92%BB-Wazuh-Agents"><span class="toc-text">💻 Wazuh Agents</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9A%99%EF%B8%8F-Installation-Setup-Guide"><span class="toc-text">⚙️ Installation &amp; Setup Guide</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%EF%B8%8F%E2%83%A3-Download-and-run-the-Wazuh-installation-assistant-Ubuntu-Server"><span class="toc-text">1️⃣ Download and run the Wazuh installation assistant. (Ubuntu Server)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%EF%B8%8F%E2%83%A3-Login-with-the-generated-credentials"><span class="toc-text">2️⃣ Login with the generated credentials</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%EF%B8%8F%E2%83%A3-Deploy-new-agent"><span class="toc-text">3️⃣ Deploy new agent</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%EF%B8%8F%E2%83%A3-Select-the-agent-configuration-Ubuntu-agent"><span class="toc-text">4️⃣ Select the agent configuration (Ubuntu agent)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%EF%B8%8F%E2%83%A3-Installing-the-wazuh-agent-on-linux-machine"><span class="toc-text">5️⃣ Installing the wazuh agent on linux machine</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6%EF%B8%8F%E2%83%A3-The-linux-maxhine-will-now-be-added"><span class="toc-text">6️⃣ The linux maxhine will now be added!</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7%EF%B8%8F%E2%83%A3-Monitoring-the-Linux-Agent"><span class="toc-text">7️⃣ Monitoring the Linux Agent</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8%EF%B8%8F%E2%83%A3-Adding-the-windows-machine-agent"><span class="toc-text">8️⃣ Adding the windows machine agent</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9%EF%B8%8F%E2%83%A3-Now-the-Windows-agent-will-also-be-added-on-the-Wazuh-server-dashboard"><span class="toc-text">9️⃣ Now the Windows agent will also be added on the Wazuh server dashboard</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%94%9F-Now-even-the-windows-endpoint-can-easily-be-monitor-on-the-server-using-Wazuh"><span class="toc-text">🔟 Now even the windows endpoint can easily be monitor on the server using Wazuh</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8E%AF-Conclusion"><span class="toc-text">🎯 Conclusion</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%9A-Reference"><span class="toc-text">📚 Reference</span></a></li></ol></li></ol>
+  </div>
+</nav>
+
+  
+
+  <div class="post-content">
+  <h1 id="🚀-Wazuh-SIEM-Local-Lab-Complete-Setup"><a href="#🚀-Wazuh-SIEM-Local-Lab-Complete-Setup" class="headerlink" title="🚀 Wazuh SIEM Local Lab - Complete Setup"></a>🚀 Wazuh SIEM Local Lab - Complete Setup</h1><p>A hands-on <strong>Wazuh SIEM lab</strong> built locally to learn real-world threat detection, endpoint monitoring, and log analysis.<br>This project includes a complete setup of the Wazuh Manager, Dashboard, and multiple endpoint agents, giving me a full mini-SOC environment to practice cybersecurity operations.</p>
+<blockquote>
+<p>🔥 <strong>Goal:</strong> Build my own SIEM environment, understand endpoint telemetry, and explore how Wazuh strengthens visibility, detection, and response.</p>
+</blockquote>
+<!-- Banner Image at the Top -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/WazuhBannerImage.png" alt="Wazuh Lab Banner" width="80%">
+</p>
+
+<hr>
+<h2 id="🏗️-Lab-Architecture"><a href="#🏗️-Lab-Architecture" class="headerlink" title="🏗️ Lab Architecture"></a>🏗️ Lab Architecture</h2><h3 id="🖥️-Wazuh-Server"><a href="#🖥️-Wazuh-Server" class="headerlink" title="🖥️ Wazuh Server"></a><strong>🖥️ Wazuh Server</strong></h3><ul>
+<li>Ubuntu Server  </li>
+<li>Wazuh Manager  </li>
+<li>Wazuh API  </li>
+<li>Wazuh Dashboard</li>
+</ul>
+<h3 id="💻-Wazuh-Agents"><a href="#💻-Wazuh-Agents" class="headerlink" title="💻 Wazuh Agents"></a><strong>💻 Wazuh Agents</strong></h3><ul>
+<li>🪟 Windows 10 endpoint  </li>
+<li>🐧 Ubuntu Desktop endpoint</li>
+</ul>
+<hr>
+<h2 id="⚙️-Installation-Setup-Guide"><a href="#⚙️-Installation-Setup-Guide" class="headerlink" title="⚙️ Installation &amp; Setup Guide"></a>⚙️ Installation &amp; Setup Guide</h2><h3 id="1️⃣-Download-and-run-the-Wazuh-installation-assistant-Ubuntu-Server"><a href="#1️⃣-Download-and-run-the-Wazuh-installation-assistant-Ubuntu-Server" class="headerlink" title="1️⃣ Download and run the Wazuh installation assistant. (Ubuntu Server)"></a><strong>1️⃣ Download and run the Wazuh installation assistant. (Ubuntu Server)</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh &amp;&amp; <span class="built_in">sudo</span> bash ./wazuh-install.sh -a</span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20cerdentials.png" alt="login credentials"></p>
+<h3 id="2️⃣-Login-with-the-generated-credentials"><a href="#2️⃣-Login-with-the-generated-credentials" class="headerlink" title="2️⃣ Login with the generated credentials"></a><strong>2️⃣ Login with the generated credentials</strong></h3><ul>
+<li>The login dashboard with be hosted on 127.0.0.1 by default on port 443</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20wazuh%20login%20page.png" alt="wazuh login page"></p>
+<h3 id="3️⃣-Deploy-new-agent"><a href="#3️⃣-Deploy-new-agent" class="headerlink" title="3️⃣ Deploy new agent"></a><strong>3️⃣ Deploy new agent</strong></h3><ul>
+<li>Click on “Deploy new agent” to add a new agent</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20wazuh%20dashboard.png" alt="deploying new agent through wazuh dashboard"></p>
+<h3 id="4️⃣-Select-the-agent-configuration-Ubuntu-agent"><a href="#4️⃣-Select-the-agent-configuration-Ubuntu-agent" class="headerlink" title="4️⃣ Select the agent configuration (Ubuntu agent)"></a><strong>4️⃣ Select the agent configuration (Ubuntu agent)</strong></h3><ul>
+<li>Select the machine machine architecture and IP address of the wazuh server</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20deploying%20agent.png" alt="selecting the configuration of agent"></p>
+<ul>
+<li>Run the following command in the linux agent that we want to add to wazuh &amp; start the wazuh services</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20starting%20wazuh%20agent.png" alt="the command to run on the linux agent"></p>
+<h3 id="5️⃣-Installing-the-wazuh-agent-on-linux-machine"><a href="#5️⃣-Installing-the-wazuh-agent-on-linux-machine" class="headerlink" title="5️⃣ Installing the wazuh agent on linux machine"></a><strong>5️⃣ Installing the wazuh agent on linux machine</strong></h3><ul>
+<li>Runnning the following custom command to install wazuh agent for our specified server</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Desktop)%20Ubuntu%2064-bit%20installing%20wazuh%20agent.png" alt="installing wazuh agent on linux ubuntu machine"></p>
+<ul>
+<li>Setting up services for wazuh agent to automatically start wazuh everytime we boot up our linux system</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Desktop)%20Ubuntu%2064-bit%20starting%20wazuh%20agent.png" alt="setting up wazuh agent service"></p>
+<h3 id="6️⃣-The-linux-maxhine-will-now-be-added"><a href="#6️⃣-The-linux-maxhine-will-now-be-added" class="headerlink" title="6️⃣ The linux maxhine will now be added!"></a><strong>6️⃣ The linux maxhine will now be added!</strong></h3><ul>
+<li>Now we can monitor our machine from the Wazuh Dashboard</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20wazuh%20agent%20dashboard%20linux%20endpoint%20added.png" alt="linux machine added to wazuh"></p>
+<h3 id="7️⃣-Monitoring-the-Linux-Agent"><a href="#7️⃣-Monitoring-the-Linux-Agent" class="headerlink" title="7️⃣ Monitoring the Linux Agent"></a><strong>7️⃣ Monitoring the Linux Agent</strong></h3><ul>
+<li>Now we can use these amazing wazuh features to easily monitor the agents that we have added <em>(Not only the MITRE ATT&amp;CK Framework and events but muc more to explore on the main dashboard!!)</em></li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20wazuh%20linux%20agent%20dashboard.png" alt="monitoring MITRE ATT&amp;CK dashboard"></p>
+<h3 id="8️⃣-Adding-the-windows-machine-agent"><a href="#8️⃣-Adding-the-windows-machine-agent" class="headerlink" title="8️⃣ Adding the windows machine agent"></a><strong>8️⃣ Adding the windows machine agent</strong></h3><ul>
+<li>The same way we’ll add the windows machine agent by selecting the configurations and the run the custom command from the wazuh server, on the windows agent in Powershell to install the wazuh agent on windows</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Desktop)%20Clone%20of%20Windows%2010%20x64%20open%20pwsh%20as%20admin.png" alt="run pwsh as administrator"></p>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Desktop)%20Clone%20of%20Windows%2010%20x64%20installing%20and%20starting%20wazuh%20agent.png" alt="installing wazuh agent &amp; starting services on windows"></p>
+<h3 id="9️⃣-Now-the-Windows-agent-will-also-be-added-on-the-Wazuh-server-dashboard"><a href="#9️⃣-Now-the-Windows-agent-will-also-be-added-on-the-Wazuh-server-dashboard" class="headerlink" title="9️⃣ Now the Windows agent will also be added on the Wazuh server dashboard"></a><strong>9️⃣ Now the Windows agent will also be added on the Wazuh server dashboard</strong></h3><ul>
+<li>The agent will now be shown in the ‘Endpoints’ section on wazuh server dashboard</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20wazuh%20dashboard%20linux%20and%20windows%20agent%20added.png" alt="windows agent added to wazuh"></p>
+<h3 id="🔟-Now-even-the-windows-endpoint-can-easily-be-monitor-on-the-server-using-Wazuh"><a href="#🔟-Now-even-the-windows-endpoint-can-easily-be-monitor-on-the-server-using-Wazuh" class="headerlink" title="🔟 Now even the windows endpoint can easily be monitor on the server using Wazuh"></a><strong>🔟 Now even the windows endpoint can easily be monitor on the server using Wazuh</strong></h3><ul>
+<li>We can use wazuh to monitor our windows agents from basic vulnerability detection to advanced threat hunting, almost everything!</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20threat%20hunting%20logs%20for%20windows%20agent.png" alt="threat hunting dashboard for windows agent"></p>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20wazuh%20dashboard%20for%20windows%20agent.png" alt="vulnerability detection dashboard for windows agent"></p>
+<hr>
+<h2 id="🎯-Conclusion"><a href="#🎯-Conclusion" class="headerlink" title="🎯 Conclusion"></a>🎯 Conclusion</h2><p>Setting up this Wazuh SIEM lab has given me real, hands-on experience with endpoint monitoring, threat detection, log analytics, and vulnerability assessment <em>(and much more..)</em> across both Linux and Windows environments. Wazuh is an incredibly powerful and versatile tool that makes it easy to gain deep visibility into your endpoints, detect advanced threats, and analyze security events in real time. By deploying multiple agents and exploring dashboards like MITRE ATT&amp;CK, Threat Hunting, and Vulnerability Detection, I now have a fully functional mini-SOC to sharpen my blue-team skills and understand enterprise-grade security monitoring first-hand.</p>
+<hr>
+<h2 id="📚-Reference"><a href="#📚-Reference" class="headerlink" title="📚 Reference"></a>📚 Reference</h2><p><em>Referred from the</em> <a href="https://documentation.wazuh.com/current/quickstart.html" target="_blank" rel="noopener noreferrer">official Wazuh Quickstart Guide</a><br><br><em>Github Repo</em> <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/README.md">link</a></p>
+
+</div>
+
+
+  <footer class="post-footer">
+  
+    <div class="post-categories">
+      <span class="meta-label">Categories: </span>
+      
+        <a href="/categories/Projects/" class="category">Projects</a>
+      
+        <a href="/categories/Projects/Wazuh-Lab/" class="category">Wazuh Lab</a>
+      
+    </div>
+  
+  
+</footer>
+
+
+  
+<nav class="post-nav">
+  
+    <div class="post-nav-item prev">
+      <span class="post-nav-label">&larr; Prev</span>
+      <a href="/2026/04/29/fetched/projects/FileGuard/FileGuard%20-%20File%20Hash%20Checker/" class="post-nav-title">
+        FileGuard - File Hash Checker
+      </a>
+    </div>
+  
+
+  
+    <div class="post-nav-item next">
+      <span class="post-nav-label">Next &rarr;</span>
+      <a href="/2026/04/20/welcome/" class="post-nav-title">
+        Welcome to my Portfolio
+      </a>
+    </div>
+  
+</nav>
+
+
+
+  
+</article>
+
+        </div>
+      
+    </main>
+
+    <footer class="footer">
+  <div class="footer-content" style="justify-content: center; text-align: center;">
+    
+    <span class="copyright">
+      &copy; 2026 Gaurav N Jain
+    </span>
+  </div>
+
+  
+    <div class="footer-social">
+      
+        <a href="https://github.com/GauravNJain" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+      
+      
+        <a href="https://twitter.com/gauravnjain_" class="social-link" target="_blank" rel="noopener" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      
+      
+      
+        <a href="mailto:gauravnjain@proton.me" class="social-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      
+      
+        <a href="/atom.xml" class="social-link" aria-label="RSS">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20C5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/></svg>
+        </a>
+      
+    </div>
+  
+</footer>
+
+  </div>
+
+  <!-- Main Script -->
+
+<script src="/js/main.js"></script>
+
+
+<!-- Search -->
+
+
+<script src="/js/search.js"></script>
+
+
+
+<!-- Baidu Analytics -->
+
+
+</body>
+</html>
