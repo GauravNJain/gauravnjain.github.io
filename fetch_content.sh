@@ -23,8 +23,8 @@ fetch_repo() {
     local root_category=$3
 
     echo "Fetching $repo_url..."
-    # Clone the repository
-    git clone --depth 1 "$repo_url" "$TEMP_DIR/$dest_name"
+    # Clone the repository without --depth 1 to preserve commit history for dates
+    git clone "$repo_url" "$TEMP_DIR/$dest_name"
 
     # Create destination directory
     mkdir -p "$FETCHED_DIR/$dest_name"
@@ -50,6 +50,10 @@ fetch_repo() {
             categories+="]"
         fi
 
+        # Get the original commit date of the file, fallback to current date if empty
+        file_date=$(git -C "$TEMP_DIR/$dest_name" log -1 --format="%ad" --date=format:"%Y-%m-%d %H:%M:%S" -- "$relative_path")
+        [ -z "$file_date" ] && file_date=$(date +"%Y-%m-%d %H:%M:%S")
+
         # Extract file content and handle front matter
         if head -n 1 "$file" | grep -q -- "---"; then
             # File already has front matter, copy it over
@@ -60,6 +64,11 @@ fetch_repo() {
                 # Insert after the title or on the second line
                 sed -i "2i categories: $categories" "$dest_file"
             fi
+            
+            # Inject date if missing
+            if ! grep -q "^date:" "$dest_file"; then
+                sed -i "2i date: $file_date" "$dest_file"
+            fi
         else
             # File has no front matter, create a new one
             title=$(basename "$file" .md | sed 's/_/ /g')
@@ -67,7 +76,7 @@ fetch_repo() {
             echo "---" > "$dest_file"
             echo "title: \"$title\"" >> "$dest_file"
             echo "categories: $categories" >> "$dest_file"
-            echo "date: $(date +"%Y-%m-%d %H:%M:%S")" >> "$dest_file"
+            echo "date: $file_date" >> "$dest_file"
             echo "---" >> "$dest_file"
             echo "" >> "$dest_file"
             cat "$file" >> "$dest_file"
