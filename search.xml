@@ -10,7 +10,7 @@
   </entry>
   <entry>
     <title>FileGuard - File Hash Checker</title>
-    <url>/2026/04/30/fetched/projects/FileGuard/FileGuard%20-%20File%20Hash%20Checker/</url>
+    <url>/2026/04/27/fetched/projects/FileGuard/FileGuard%20-%20File%20Hash%20Checker/</url>
     <content><![CDATA[<p align="center">
   <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardASCII.png" alt="File Hash Checker Logo" width="875">
 </p>
@@ -55,7 +55,7 @@
   </entry>
   <entry>
     <title>Wazuh SIEM Local Lab - Complete Setup</title>
-    <url>/2026/04/30/fetched/projects/Wazuh%20Lab/Wazuh%20SIEM%20Local%20Lab%20-%20Complete%20Setup/</url>
+    <url>/2026/04/29/fetched/projects/Wazuh%20Lab/Wazuh%20SIEM%20Local%20Lab%20-%20Complete%20Setup/</url>
     <content><![CDATA[<h1 id="🚀-Wazuh-SIEM-Local-Lab-Complete-Setup"><a href="#🚀-Wazuh-SIEM-Local-Lab-Complete-Setup" class="headerlink" title="🚀 Wazuh SIEM Local Lab - Complete Setup"></a>🚀 Wazuh SIEM Local Lab - Complete Setup</h1><p>A hands-on <strong>Wazuh SIEM lab</strong> built locally to learn real-world threat detection, endpoint monitoring, and log analysis.<br>This project includes a complete setup of the Wazuh Manager, Dashboard, and multiple endpoint agents, giving me a full mini-SOC environment to practice cybersecurity operations.</p>
 <blockquote>
 <p>🔥 <strong>Goal:</strong> Build my own SIEM environment, understand endpoint telemetry, and explore how Wazuh strengthens visibility, detection, and response.</p>
