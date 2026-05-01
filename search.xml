@@ -9,6 +9,147 @@
 ]]></content>
   </entry>
   <entry>
+    <title>FileGuard - File Hash Checker</title>
+    <url>/2026/04/27/fetched/projects/FileGuard/FileGuard%20-%20File%20Hash%20Checker/</url>
+    <content><![CDATA[<p align="center">
+  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardASCII.png" alt="File Hash Checker Logo" width="875">
+</p>
+
+<h1 id="🔐-FileGuard-File-Hash-Checker"><a href="#🔐-FileGuard-File-Hash-Checker" class="headerlink" title="🔐 FileGuard - File Hash Checker"></a>🔐 FileGuard - File Hash Checker</h1><p>A simple shell script tool to <strong>generate file hashes</strong> and <strong>verify file integrity</strong>.</p>
+<hr>
+<h3 id="📌-About"><a href="#📌-About" class="headerlink" title="📌 About"></a>📌 About</h3><p><strong>File Hash Checker</strong> is a lightweight and easy-to-use tool that allows users to:  </p>
+<p>🔍 <strong>Generate file hashes</strong> using <strong>MD5, SHA1, or SHA256</strong>.<br>✅ <strong>Verify file integrity</strong> by comparing the hash of the original and copied files.  </p>
+<hr>
+<h3 id="🚀-Features"><a href="#🚀-Features" class="headerlink" title="🚀 Features"></a>🚀 Features</h3><p>📜 <strong>Menu-based interface</strong> for easy navigation.<br>🔄 <strong>Supports multiple hashing algorithms</strong>: MD5, SHA1, SHA256.<br>⚠️ <strong>Error handling</strong> for missing files and invalid inputs.  </p>
+<hr>
+<h3 id="🛠-Installation"><a href="#🛠-Installation" class="headerlink" title="🛠 Installation"></a>🛠 Installation</h3><p>Clone the repository and give the script execution permissions:  </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/GauravNJain/FileGuard.git</span><br><span class="line">cd FileGuard</span><br><span class="line">chmod +x flieguard.sh</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="🏃-Usage"><a href="#🏃-Usage" class="headerlink" title="🏃 Usage"></a>🏃 Usage</h3><p>Run the script:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./fileguard.sh</span><br></pre></td></tr></table></figure>
+<p>Follow the menu options to generate hashes or verify file integrity.</p>
+<hr>
+<h3 id="🖼️-Screenshots"><a href="#🖼️-Screenshots" class="headerlink" title="🖼️ Screenshots"></a>🖼️ Screenshots</h3><p>Here are some screenshots of the tool in action:</p>
+<p>🔢 Generating a file hash:</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardGenHash.png" alt="File Hash Checker Logo" width="450">
+</p>
+
+
+<p>🔍 Verifying file integrity:</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardIntCheck.png" alt="File Hash Checker Logo" width="450">
+</p>
+
+<hr>
+<h3 id="👤-Author"><a href="#👤-Author" class="headerlink" title="👤 Author"></a>👤 Author</h3><ul>
+<li>Developed by Gaurav N Jain</li>
+</ul>
+<p>📧 Contact: <a href="https://www.linkedin.com/in/gauravnjain/">LinkedIn Profile</a><br>Github Repo: <a href="https://github.com/GauravNJain/FileGuard">link</a> </p>
+]]></content>
+      <categories>
+        <category>Projects</category>
+        <category>FileGuard</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>NetWizard++ - A network enumeration and penetration testing toolkit</title>
+    <url>/2026/05/01/fetched/projects/tools/NetWizard++%20-%20A%20network%20enumeration%20and%20penetration%20testing%20toolkit/</url>
+    <content><![CDATA[<p align="center">
+  <img src="https://raw.githubusercontent.com/GauravNJain/Netwizard-plusplus/main/imgs/Netwizard%2B%2B%20Banner%20Image.png" alt="NetWizard++ Banner" width="80%">
+</p>
+
+<h1 id="NetWizard-Toolkit"><a href="#NetWizard-Toolkit" class="headerlink" title="NetWizard++ Toolkit"></a>NetWizard++ Toolkit</h1><p>NetWizard++ is a lightweight, Bash-based <strong>network mapping and pentesting toolkit</strong> designed for fast reconnaissance, subnet analysis, host discovery, and simple visualization using Nmap and Graphviz.</p>
+<p>It is intended for <strong>educational purposes, labs, and authorized security testing only</strong>.</p>
+<hr>
+<h2 id="✨-Features"><a href="#✨-Features" class="headerlink" title="✨ Features"></a>✨ Features</h2><ul>
+<li><p>📐 <strong>Subnet Calculator</strong></p>
+<img src="https://raw.githubusercontent.com/GauravNJain/Netwizard-plusplus/main/imgs/Subnet%20Calculator%20Image.png" alt="NetWizard++ Banner" width="50%">
+
+<ul>
+<li>Network ID</li>
+<li>Broadcast address</li>
+<li>Subnet mask</li>
+<li>Usable IP range and host count</li>
+</ul>
+</li>
+<li><p>🔍 <strong>Host Discovery</strong></p>
+<img src="https://raw.githubusercontent.com/GauravNJain/Netwizard-plusplus/main/imgs/Host%20discovery%20image.png" alt="NetWizard++ Banner" width="50%">
+
+<ul>
+<li>Ping-scan based live host detection using Nmap</li>
+</ul>
+</li>
+<li><p>📊 <strong>Readable Host Table</strong></p>
+<img src="https://raw.githubusercontent.com/GauravNJain/Netwizard-plusplus/main/imgs/readable%20host%20table%20image.png" alt="NetWizard++ Banner" width="50%">
+
+<ul>
+<li>IP address</li>
+<li>Hostname (if available)</li>
+<li>MAC address and vendor (when detected)</li>
+</ul>
+</li>
+<li><p>🗺️ <strong>Network Map Visualization</strong></p>
+<img src="https://raw.githubusercontent.com/GauravNJain/Netwizard-plusplus/main/imgs/Network%20Map%20Visualizer%20img.png" alt="NetWizard++ Banner" width="50%">
+
+<ul>
+<li>ASCII host list</li>
+<li>Automatically generated PNG network map using Graphviz</li>
+</ul>
+</li>
+<li><p>🛡️ <strong>Pentest Enumeration</strong></p>
+<img src="https://raw.githubusercontent.com/GauravNJain/Netwizard-plusplus/main/imgs/Pentest%20Enumeration%20img.png" alt="NetWizard++ Banner" width="50%">
+
+<ul>
+<li>SYN scan</li>
+<li>Service&#x2F;version detection</li>
+<li>OS detection</li>
+<li>Output saved for reporting</li>
+</ul>
+</li>
+<li><p>🔔 <strong>New Device Detection</strong></p>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Netwizard-plusplus/main/imgs/new%20device%20detection%20(baseline%20creation).png" alt="NetWizard++ Banner" width="35%">  <img src="https://raw.githubusercontent.com/GauravNJain/Netwizard-plusplus/main/imgs/newly%20added%20device%20detection.png" alt="NetWizard++ Banner" width="35%"></p>
+<ul>
+<li>Detects new hosts appearing on a network by comparing scans</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="🧠-How-Network-Mapping-Works"><a href="#🧠-How-Network-Mapping-Works" class="headerlink" title="🧠 How Network Mapping Works"></a>🧠 How Network Mapping Works</h2><p>NetWizard++ does <strong>not</strong> perform physical topology discovery.</p>
+<p>Instead, it:</p>
+<ol>
+<li>Uses <code>nmap -sn</code> to detect live hosts</li>
+<li>Writes a <strong>Graphviz DOT file</strong> describing relationships between the network and hosts</li>
+<li>Uses Graphviz (<code>dot</code>) to render a <strong>logical host relationship map</strong></li>
+</ol>
+<p>This produces a clean, report-friendly visualization of discovered assets.</p>
+<hr>
+<h2 id="📦-Requirements"><a href="#📦-Requirements" class="headerlink" title="📦 Requirements"></a>📦 Requirements</h2><p>NetWizard++ relies on the following tools:</p>
+<ul>
+<li><code>bash</code></li>
+<li><code>nmap</code></li>
+<li><code>gawk</code></li>
+<li><code>util-linux</code></li>
+<li><code>graphviz</code> (optional, for PNG network maps)</li>
+</ul>
+<p>The installer will attempt to install these automatically.</p>
+<hr>
+<h2 id="🚀-Installation"><a href="#🚀-Installation" class="headerlink" title="🚀 Installation"></a>🚀 Installation</h2><p>Clone the repository and run the installer:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/GauravNJain/Netwizard-plusplus.git</span><br><span class="line"><span class="built_in">cd</span> Netwizard-plusplus</span><br><span class="line"><span class="built_in">sudo</span> bash ./installer.sh</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="👤-Author"><a href="#👤-Author" class="headerlink" title="👤 Author"></a>👤 Author</h2><ul>
+<li>Developed by Gaurav N Jain</li>
+</ul>
+<p>📧 Contact: <a href="https://www.linkedin.com/in/gauravnjain/">LinkedIn Profile</a><br><br>Github: <a href="https://github.com/GauravNJain/Netwizard-plusplus/">repo link</a></p>
+]]></content>
+      <categories>
+        <category>Projects</category>
+        <category>tools</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Wazuh SIEM Local Lab - Complete Setup</title>
     <url>/2026/04/29/fetched/projects/Wazuh%20Lab/Wazuh%20SIEM%20Local%20Lab%20-%20Complete%20Setup/</url>
     <content><![CDATA[<h1 id="🚀-Wazuh-SIEM-Local-Lab-Complete-Setup"><a href="#🚀-Wazuh-SIEM-Local-Lab-Complete-Setup" class="headerlink" title="🚀 Wazuh SIEM Local Lab - Complete Setup"></a>🚀 Wazuh SIEM Local Lab - Complete Setup</h1><p>A hands-on <strong>Wazuh SIEM lab</strong> built locally to learn real-world threat detection, endpoint monitoring, and log analysis.<br>This project includes a complete setup of the Wazuh Manager, Dashboard, and multiple endpoint agents, giving me a full mini-SOC environment to practice cybersecurity operations.</p>
@@ -88,51 +229,6 @@
       <categories>
         <category>Projects</category>
         <category>Wazuh Lab</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>FileGuard - File Hash Checker</title>
-    <url>/2026/04/27/fetched/projects/FileGuard/FileGuard%20-%20File%20Hash%20Checker/</url>
-    <content><![CDATA[<p align="center">
-  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardASCII.png" alt="File Hash Checker Logo" width="875">
-</p>
-
-<h1 id="🔐-FileGuard-File-Hash-Checker"><a href="#🔐-FileGuard-File-Hash-Checker" class="headerlink" title="🔐 FileGuard - File Hash Checker"></a>🔐 FileGuard - File Hash Checker</h1><p>A simple shell script tool to <strong>generate file hashes</strong> and <strong>verify file integrity</strong>.</p>
-<hr>
-<h3 id="📌-About"><a href="#📌-About" class="headerlink" title="📌 About"></a>📌 About</h3><p><strong>File Hash Checker</strong> is a lightweight and easy-to-use tool that allows users to:  </p>
-<p>🔍 <strong>Generate file hashes</strong> using <strong>MD5, SHA1, or SHA256</strong>.<br>✅ <strong>Verify file integrity</strong> by comparing the hash of the original and copied files.  </p>
-<hr>
-<h3 id="🚀-Features"><a href="#🚀-Features" class="headerlink" title="🚀 Features"></a>🚀 Features</h3><p>📜 <strong>Menu-based interface</strong> for easy navigation.<br>🔄 <strong>Supports multiple hashing algorithms</strong>: MD5, SHA1, SHA256.<br>⚠️ <strong>Error handling</strong> for missing files and invalid inputs.  </p>
-<hr>
-<h3 id="🛠-Installation"><a href="#🛠-Installation" class="headerlink" title="🛠 Installation"></a>🛠 Installation</h3><p>Clone the repository and give the script execution permissions:  </p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/GauravNJain/FileGuard.git</span><br><span class="line">cd FileGuard</span><br><span class="line">chmod +x flieguard.sh</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="🏃-Usage"><a href="#🏃-Usage" class="headerlink" title="🏃 Usage"></a>🏃 Usage</h3><p>Run the script:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./fileguard.sh</span><br></pre></td></tr></table></figure>
-<p>Follow the menu options to generate hashes or verify file integrity.</p>
-<hr>
-<h3 id="🖼️-Screenshots"><a href="#🖼️-Screenshots" class="headerlink" title="🖼️ Screenshots"></a>🖼️ Screenshots</h3><p>Here are some screenshots of the tool in action:</p>
-<p>🔢 Generating a file hash:</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardGenHash.png" alt="File Hash Checker Logo" width="450">
-</p>
-
-
-<p>🔍 Verifying file integrity:</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardIntCheck.png" alt="File Hash Checker Logo" width="450">
-</p>
-
-<hr>
-<h3 id="👤-Author"><a href="#👤-Author" class="headerlink" title="👤 Author"></a>👤 Author</h3><ul>
-<li>Developed by Gaurav N Jain</li>
-</ul>
-<p>📧 Contact: <a href="https://www.linkedin.com/in/gauravnjain/">LinkedIn Profile</a><br>Github Repo: <a href="https://github.com/GauravNJain/FileGuard">link</a> </p>
-]]></content>
-      <categories>
-        <category>Projects</category>
-        <category>FileGuard</category>
       </categories>
   </entry>
 </search>
