@@ -10,7 +10,38 @@
   <rights>All rights reserved 2026, Gaurav N Jain</rights>
   <subtitle>CTF Player | Security Analyst</subtitle>
   <title>Gaurav N Jain's Blog</title>
-  <updated>2026-05-01T18:58:29.615Z</updated>
+  <updated>2026-05-02T01:54:36.451Z</updated>
+  <entry>
+    <author>
+      <name>Gaurav N Jain</name>
+    </author>
+    <category term="Projects" scheme="https://gauravnjain.github.io/categories/Projects/"/>
+    <category term="Lab Seups" scheme="https://gauravnjain.github.io/categories/Projects/Lab-Seups/"/>
+    <id>https://gauravnjain.github.io/2026/05/02/fetched/projects/Lab%20Seups/Wazuh%20SIEM%20Local%20Lab%20-%20Complete%20Setup/</id>
+    <link href="https://gauravnjain.github.io/2026/05/02/fetched/projects/Lab%20Seups/Wazuh%20SIEM%20Local%20Lab%20-%20Complete%20Setup/"/>
+    <published>2026-05-02T01:16:13.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="🚀-Wazuh-SIEM-Local-Lab-Complete-Setup"><a href="#🚀-Wazuh-SIEM-Local-Lab-Complete-Setup" class="headerlink" title="🚀 Wazuh SIEM]]>
+    </summary>
+    <title>Wazuh SIEM Local Lab - Complete Setup</title>
+    <updated>2026-05-02T01:54:36.451Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Gaurav N Jain</name>
+    </author>
+    <category term="Projects" scheme="https://gauravnjain.github.io/categories/Projects/"/>
+    <category term="tools" scheme="https://gauravnjain.github.io/categories/Projects/tools/"/>
+    <id>https://gauravnjain.github.io/2026/05/02/fetched/projects/tools/FileGuard%20-%20File%20Hash%20Checker/</id>
+    <link href="https://gauravnjain.github.io/2026/05/02/fetched/projects/tools/FileGuard%20-%20File%20Hash%20Checker/"/>
+    <published>2026-05-02T01:15:40.000Z</published>
+    <summary>
+      <![CDATA[<p align="center">
+  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardASCII.png" alt="File Hash Checker]]>
+    </summary>
+    <title>FileGuard - File Hash Checker</title>
+    <updated>2026-05-02T01:54:36.428Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Gaurav N Jain</name>
@@ -25,38 +56,7 @@
   <img]]>
     </summary>
     <title>NetWizard++ - A network enumeration and penetration testing toolkit</title>
-    <updated>2026-05-01T18:58:29.615Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Gaurav N Jain</name>
-    </author>
-    <category term="Projects" scheme="https://gauravnjain.github.io/categories/Projects/"/>
-    <category term="Wazuh Lab" scheme="https://gauravnjain.github.io/categories/Projects/Wazuh-Lab/"/>
-    <id>https://gauravnjain.github.io/2026/04/29/fetched/projects/Wazuh%20Lab/Wazuh%20SIEM%20Local%20Lab%20-%20Complete%20Setup/</id>
-    <link href="https://gauravnjain.github.io/2026/04/29/fetched/projects/Wazuh%20Lab/Wazuh%20SIEM%20Local%20Lab%20-%20Complete%20Setup/"/>
-    <published>2026-04-29T22:01:07.000Z</published>
-    <summary>
-      <![CDATA[<h1 id="🚀-Wazuh-SIEM-Local-Lab-Complete-Setup"><a href="#🚀-Wazuh-SIEM-Local-Lab-Complete-Setup" class="headerlink" title="🚀 Wazuh SIEM]]>
-    </summary>
-    <title>Wazuh SIEM Local Lab - Complete Setup</title>
-    <updated>2026-05-01T18:58:29.627Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Gaurav N Jain</name>
-    </author>
-    <category term="Projects" scheme="https://gauravnjain.github.io/categories/Projects/"/>
-    <category term="FileGuard" scheme="https://gauravnjain.github.io/categories/Projects/FileGuard/"/>
-    <id>https://gauravnjain.github.io/2026/04/27/fetched/projects/FileGuard/FileGuard%20-%20File%20Hash%20Checker/</id>
-    <link href="https://gauravnjain.github.io/2026/04/27/fetched/projects/FileGuard/FileGuard%20-%20File%20Hash%20Checker/"/>
-    <published>2026-04-27T12:25:47.000Z</published>
-    <summary>
-      <![CDATA[<p align="center">
-  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardASCII.png" alt="File Hash Checker]]>
-    </summary>
-    <title>FileGuard - File Hash Checker</title>
-    <updated>2026-05-01T18:58:29.637Z</updated>
+    <updated>2026-05-02T01:54:36.440Z</updated>
   </entry>
   <entry>
     <author>
@@ -69,6 +69,6 @@
       <![CDATA[<p>Welcome to my cybersecurity portfolio and blog. This site features writeups from various CTFs, security research projects, and my]]>
     </summary>
     <title>Welcome to my Portfolio</title>
-    <updated>2026-05-01T18:58:18.730Z</updated>
+    <updated>2026-05-02T01:54:27.742Z</updated>
   </entry>
 </feed>

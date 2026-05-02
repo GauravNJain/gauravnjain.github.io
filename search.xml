@@ -9,48 +9,85 @@
 ]]></content>
   </entry>
   <entry>
-    <title>FileGuard - File Hash Checker</title>
-    <url>/2026/04/27/fetched/projects/FileGuard/FileGuard%20-%20File%20Hash%20Checker/</url>
-    <content><![CDATA[<p align="center">
-  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardASCII.png" alt="File Hash Checker Logo" width="875">
-</p>
-
-<h1 id="🔐-FileGuard-File-Hash-Checker"><a href="#🔐-FileGuard-File-Hash-Checker" class="headerlink" title="🔐 FileGuard - File Hash Checker"></a>🔐 FileGuard - File Hash Checker</h1><p>A simple shell script tool to <strong>generate file hashes</strong> and <strong>verify file integrity</strong>.</p>
-<hr>
-<h3 id="📌-About"><a href="#📌-About" class="headerlink" title="📌 About"></a>📌 About</h3><p><strong>File Hash Checker</strong> is a lightweight and easy-to-use tool that allows users to:  </p>
-<p>🔍 <strong>Generate file hashes</strong> using <strong>MD5, SHA1, or SHA256</strong>.<br>✅ <strong>Verify file integrity</strong> by comparing the hash of the original and copied files.  </p>
-<hr>
-<h3 id="🚀-Features"><a href="#🚀-Features" class="headerlink" title="🚀 Features"></a>🚀 Features</h3><p>📜 <strong>Menu-based interface</strong> for easy navigation.<br>🔄 <strong>Supports multiple hashing algorithms</strong>: MD5, SHA1, SHA256.<br>⚠️ <strong>Error handling</strong> for missing files and invalid inputs.  </p>
-<hr>
-<h3 id="🛠-Installation"><a href="#🛠-Installation" class="headerlink" title="🛠 Installation"></a>🛠 Installation</h3><p>Clone the repository and give the script execution permissions:  </p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/GauravNJain/FileGuard.git</span><br><span class="line">cd FileGuard</span><br><span class="line">chmod +x flieguard.sh</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="🏃-Usage"><a href="#🏃-Usage" class="headerlink" title="🏃 Usage"></a>🏃 Usage</h3><p>Run the script:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./fileguard.sh</span><br></pre></td></tr></table></figure>
-<p>Follow the menu options to generate hashes or verify file integrity.</p>
-<hr>
-<h3 id="🖼️-Screenshots"><a href="#🖼️-Screenshots" class="headerlink" title="🖼️ Screenshots"></a>🖼️ Screenshots</h3><p>Here are some screenshots of the tool in action:</p>
-<p>🔢 Generating a file hash:</p>
+    <title>Wazuh SIEM Local Lab - Complete Setup</title>
+    <url>/2026/05/02/fetched/projects/Lab%20Seups/Wazuh%20SIEM%20Local%20Lab%20-%20Complete%20Setup/</url>
+    <content><![CDATA[<h1 id="🚀-Wazuh-SIEM-Local-Lab-Complete-Setup"><a href="#🚀-Wazuh-SIEM-Local-Lab-Complete-Setup" class="headerlink" title="🚀 Wazuh SIEM Local Lab - Complete Setup"></a>🚀 Wazuh SIEM Local Lab - Complete Setup</h1><p>A hands-on <strong>Wazuh SIEM lab</strong> built locally to learn real-world threat detection, endpoint monitoring, and log analysis.<br>This project includes a complete setup of the Wazuh Manager, Dashboard, and multiple endpoint agents, giving me a full mini-SOC environment to practice cybersecurity operations.</p>
+<blockquote>
+<p>🔥 <strong>Goal:</strong> Build my own SIEM environment, understand endpoint telemetry, and explore how Wazuh strengthens visibility, detection, and response.</p>
+</blockquote>
+<!-- Banner Image at the Top -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardGenHash.png" alt="File Hash Checker Logo" width="450">
-</p>
-
-
-<p>🔍 Verifying file integrity:</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardIntCheck.png" alt="File Hash Checker Logo" width="450">
+  <img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/WazuhBannerImage.png" alt="Wazuh Lab Banner" width="80%">
 </p>
 
 <hr>
-<h3 id="👤-Author"><a href="#👤-Author" class="headerlink" title="👤 Author"></a>👤 Author</h3><ul>
-<li>Developed by Gaurav N Jain</li>
+<h2 id="🏗️-Lab-Architecture"><a href="#🏗️-Lab-Architecture" class="headerlink" title="🏗️ Lab Architecture"></a>🏗️ Lab Architecture</h2><h3 id="🖥️-Wazuh-Server"><a href="#🖥️-Wazuh-Server" class="headerlink" title="🖥️ Wazuh Server"></a><strong>🖥️ Wazuh Server</strong></h3><ul>
+<li>Ubuntu Server  </li>
+<li>Wazuh Manager  </li>
+<li>Wazuh API  </li>
+<li>Wazuh Dashboard</li>
 </ul>
-<p>📧 Contact: <a href="https://www.linkedin.com/in/gauravnjain/">LinkedIn Profile</a><br>Github Repo: <a href="https://github.com/GauravNJain/FileGuard">link</a> </p>
+<h3 id="💻-Wazuh-Agents"><a href="#💻-Wazuh-Agents" class="headerlink" title="💻 Wazuh Agents"></a><strong>💻 Wazuh Agents</strong></h3><ul>
+<li>🪟 Windows 10 endpoint  </li>
+<li>🐧 Ubuntu Desktop endpoint</li>
+</ul>
+<hr>
+<h2 id="⚙️-Installation-Setup-Guide"><a href="#⚙️-Installation-Setup-Guide" class="headerlink" title="⚙️ Installation &amp; Setup Guide"></a>⚙️ Installation &amp; Setup Guide</h2><h3 id="1️⃣-Download-and-run-the-Wazuh-installation-assistant-Ubuntu-Server"><a href="#1️⃣-Download-and-run-the-Wazuh-installation-assistant-Ubuntu-Server" class="headerlink" title="1️⃣ Download and run the Wazuh installation assistant. (Ubuntu Server)"></a><strong>1️⃣ Download and run the Wazuh installation assistant. (Ubuntu Server)</strong></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh &amp;&amp; <span class="built_in">sudo</span> bash ./wazuh-install.sh -a</span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20cerdentials.png" alt="login credentials"></p>
+<h3 id="2️⃣-Login-with-the-generated-credentials"><a href="#2️⃣-Login-with-the-generated-credentials" class="headerlink" title="2️⃣ Login with the generated credentials"></a><strong>2️⃣ Login with the generated credentials</strong></h3><ul>
+<li>The login dashboard with be hosted on 127.0.0.1 by default on port 443</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20wazuh%20login%20page.png" alt="wazuh login page"></p>
+<h3 id="3️⃣-Deploy-new-agent"><a href="#3️⃣-Deploy-new-agent" class="headerlink" title="3️⃣ Deploy new agent"></a><strong>3️⃣ Deploy new agent</strong></h3><ul>
+<li>Click on “Deploy new agent” to add a new agent</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20wazuh%20dashboard.png" alt="deploying new agent through wazuh dashboard"></p>
+<h3 id="4️⃣-Select-the-agent-configuration-Ubuntu-agent"><a href="#4️⃣-Select-the-agent-configuration-Ubuntu-agent" class="headerlink" title="4️⃣ Select the agent configuration (Ubuntu agent)"></a><strong>4️⃣ Select the agent configuration (Ubuntu agent)</strong></h3><ul>
+<li>Select the machine machine architecture and IP address of the wazuh server</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20deploying%20agent.png" alt="selecting the configuration of agent"></p>
+<ul>
+<li>Run the following command in the linux agent that we want to add to wazuh &amp; start the wazuh services</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20starting%20wazuh%20agent.png" alt="the command to run on the linux agent"></p>
+<h3 id="5️⃣-Installing-the-wazuh-agent-on-linux-machine"><a href="#5️⃣-Installing-the-wazuh-agent-on-linux-machine" class="headerlink" title="5️⃣ Installing the wazuh agent on linux machine"></a><strong>5️⃣ Installing the wazuh agent on linux machine</strong></h3><ul>
+<li>Runnning the following custom command to install wazuh agent for our specified server</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Desktop)%20Ubuntu%2064-bit%20installing%20wazuh%20agent.png" alt="installing wazuh agent on linux ubuntu machine"></p>
+<ul>
+<li>Setting up services for wazuh agent to automatically start wazuh everytime we boot up our linux system</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Desktop)%20Ubuntu%2064-bit%20starting%20wazuh%20agent.png" alt="setting up wazuh agent service"></p>
+<h3 id="6️⃣-The-linux-maxhine-will-now-be-added"><a href="#6️⃣-The-linux-maxhine-will-now-be-added" class="headerlink" title="6️⃣ The linux maxhine will now be added!"></a><strong>6️⃣ The linux maxhine will now be added!</strong></h3><ul>
+<li>Now we can monitor our machine from the Wazuh Dashboard</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20wazuh%20agent%20dashboard%20linux%20endpoint%20added.png" alt="linux machine added to wazuh"></p>
+<h3 id="7️⃣-Monitoring-the-Linux-Agent"><a href="#7️⃣-Monitoring-the-Linux-Agent" class="headerlink" title="7️⃣ Monitoring the Linux Agent"></a><strong>7️⃣ Monitoring the Linux Agent</strong></h3><ul>
+<li>Now we can use these amazing wazuh features to easily monitor the agents that we have added <em>(Not only the MITRE ATT&amp;CK Framework and events but muc more to explore on the main dashboard!!)</em></li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20wazuh%20linux%20agent%20dashboard.png" alt="monitoring MITRE ATT&amp;CK dashboard"></p>
+<h3 id="8️⃣-Adding-the-windows-machine-agent"><a href="#8️⃣-Adding-the-windows-machine-agent" class="headerlink" title="8️⃣ Adding the windows machine agent"></a><strong>8️⃣ Adding the windows machine agent</strong></h3><ul>
+<li>The same way we’ll add the windows machine agent by selecting the configurations and the run the custom command from the wazuh server, on the windows agent in Powershell to install the wazuh agent on windows</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Desktop)%20Clone%20of%20Windows%2010%20x64%20open%20pwsh%20as%20admin.png" alt="run pwsh as administrator"></p>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Desktop)%20Clone%20of%20Windows%2010%20x64%20installing%20and%20starting%20wazuh%20agent.png" alt="installing wazuh agent &amp; starting services on windows"></p>
+<h3 id="9️⃣-Now-the-Windows-agent-will-also-be-added-on-the-Wazuh-server-dashboard"><a href="#9️⃣-Now-the-Windows-agent-will-also-be-added-on-the-Wazuh-server-dashboard" class="headerlink" title="9️⃣ Now the Windows agent will also be added on the Wazuh server dashboard"></a><strong>9️⃣ Now the Windows agent will also be added on the Wazuh server dashboard</strong></h3><ul>
+<li>The agent will now be shown in the ‘Endpoints’ section on wazuh server dashboard</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20wazuh%20dashboard%20linux%20and%20windows%20agent%20added.png" alt="windows agent added to wazuh"></p>
+<h3 id="🔟-Now-even-the-windows-endpoint-can-easily-be-monitor-on-the-server-using-Wazuh"><a href="#🔟-Now-even-the-windows-endpoint-can-easily-be-monitor-on-the-server-using-Wazuh" class="headerlink" title="🔟 Now even the windows endpoint can easily be monitor on the server using Wazuh"></a><strong>🔟 Now even the windows endpoint can easily be monitor on the server using Wazuh</strong></h3><ul>
+<li>We can use wazuh to monitor our windows agents from basic vulnerability detection to advanced threat hunting, almost everything!</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20threat%20hunting%20logs%20for%20windows%20agent.png" alt="threat hunting dashboard for windows agent"></p>
+<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20wazuh%20dashboard%20for%20windows%20agent.png" alt="vulnerability detection dashboard for windows agent"></p>
+<hr>
+<h2 id="🎯-Conclusion"><a href="#🎯-Conclusion" class="headerlink" title="🎯 Conclusion"></a>🎯 Conclusion</h2><p>Setting up this Wazuh SIEM lab has given me real, hands-on experience with endpoint monitoring, threat detection, log analytics, and vulnerability assessment <em>(and much more..)</em> across both Linux and Windows environments. Wazuh is an incredibly powerful and versatile tool that makes it easy to gain deep visibility into your endpoints, detect advanced threats, and analyze security events in real time. By deploying multiple agents and exploring dashboards like MITRE ATT&amp;CK, Threat Hunting, and Vulnerability Detection, I now have a fully functional mini-SOC to sharpen my blue-team skills and understand enterprise-grade security monitoring first-hand.</p>
+<hr>
+<h2 id="📚-Reference"><a href="#📚-Reference" class="headerlink" title="📚 Reference"></a>📚 Reference</h2><p><em>Referred from the</em> <a href="https://documentation.wazuh.com/current/quickstart.html" target="_blank" rel="noopener noreferrer">official Wazuh Quickstart Guide</a><br><br><em>Github Repo</em> <a href="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/README.md">link</a></p>
 ]]></content>
       <categories>
         <category>Projects</category>
-        <category>FileGuard</category>
+        <category>Lab Seups</category>
       </categories>
   </entry>
   <entry>
@@ -150,85 +187,48 @@
       </categories>
   </entry>
   <entry>
-    <title>Wazuh SIEM Local Lab - Complete Setup</title>
-    <url>/2026/04/29/fetched/projects/Wazuh%20Lab/Wazuh%20SIEM%20Local%20Lab%20-%20Complete%20Setup/</url>
-    <content><![CDATA[<h1 id="🚀-Wazuh-SIEM-Local-Lab-Complete-Setup"><a href="#🚀-Wazuh-SIEM-Local-Lab-Complete-Setup" class="headerlink" title="🚀 Wazuh SIEM Local Lab - Complete Setup"></a>🚀 Wazuh SIEM Local Lab - Complete Setup</h1><p>A hands-on <strong>Wazuh SIEM lab</strong> built locally to learn real-world threat detection, endpoint monitoring, and log analysis.<br>This project includes a complete setup of the Wazuh Manager, Dashboard, and multiple endpoint agents, giving me a full mini-SOC environment to practice cybersecurity operations.</p>
-<blockquote>
-<p>🔥 <strong>Goal:</strong> Build my own SIEM environment, understand endpoint telemetry, and explore how Wazuh strengthens visibility, detection, and response.</p>
-</blockquote>
-<!-- Banner Image at the Top -->
+    <title>FileGuard - File Hash Checker</title>
+    <url>/2026/05/02/fetched/projects/tools/FileGuard%20-%20File%20Hash%20Checker/</url>
+    <content><![CDATA[<p align="center">
+  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardASCII.png" alt="File Hash Checker Logo" width="875">
+</p>
+
+<h1 id="🔐-FileGuard-File-Hash-Checker"><a href="#🔐-FileGuard-File-Hash-Checker" class="headerlink" title="🔐 FileGuard - File Hash Checker"></a>🔐 FileGuard - File Hash Checker</h1><p>A simple shell script tool to <strong>generate file hashes</strong> and <strong>verify file integrity</strong>.</p>
+<hr>
+<h3 id="📌-About"><a href="#📌-About" class="headerlink" title="📌 About"></a>📌 About</h3><p><strong>File Hash Checker</strong> is a lightweight and easy-to-use tool that allows users to:  </p>
+<p>🔍 <strong>Generate file hashes</strong> using <strong>MD5, SHA1, or SHA256</strong>.<br>✅ <strong>Verify file integrity</strong> by comparing the hash of the original and copied files.  </p>
+<hr>
+<h3 id="🚀-Features"><a href="#🚀-Features" class="headerlink" title="🚀 Features"></a>🚀 Features</h3><p>📜 <strong>Menu-based interface</strong> for easy navigation.<br>🔄 <strong>Supports multiple hashing algorithms</strong>: MD5, SHA1, SHA256.<br>⚠️ <strong>Error handling</strong> for missing files and invalid inputs.  </p>
+<hr>
+<h3 id="🛠-Installation"><a href="#🛠-Installation" class="headerlink" title="🛠 Installation"></a>🛠 Installation</h3><p>Clone the repository and give the script execution permissions:  </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/GauravNJain/FileGuard.git</span><br><span class="line">cd FileGuard</span><br><span class="line">chmod +x flieguard.sh</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="🏃-Usage"><a href="#🏃-Usage" class="headerlink" title="🏃 Usage"></a>🏃 Usage</h3><p>Run the script:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./fileguard.sh</span><br></pre></td></tr></table></figure>
+<p>Follow the menu options to generate hashes or verify file integrity.</p>
+<hr>
+<h3 id="🖼️-Screenshots"><a href="#🖼️-Screenshots" class="headerlink" title="🖼️ Screenshots"></a>🖼️ Screenshots</h3><p>Here are some screenshots of the tool in action:</p>
+<p>🔢 Generating a file hash:</p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/WazuhBannerImage.png" alt="Wazuh Lab Banner" width="80%">
+  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardGenHash.png" alt="File Hash Checker Logo" width="450">
+</p>
+
+
+<p>🔍 Verifying file integrity:</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardIntCheck.png" alt="File Hash Checker Logo" width="450">
 </p>
 
 <hr>
-<h2 id="🏗️-Lab-Architecture"><a href="#🏗️-Lab-Architecture" class="headerlink" title="🏗️ Lab Architecture"></a>🏗️ Lab Architecture</h2><h3 id="🖥️-Wazuh-Server"><a href="#🖥️-Wazuh-Server" class="headerlink" title="🖥️ Wazuh Server"></a><strong>🖥️ Wazuh Server</strong></h3><ul>
-<li>Ubuntu Server  </li>
-<li>Wazuh Manager  </li>
-<li>Wazuh API  </li>
-<li>Wazuh Dashboard</li>
+<h3 id="👤-Author"><a href="#👤-Author" class="headerlink" title="👤 Author"></a>👤 Author</h3><ul>
+<li>Developed by Gaurav N Jain</li>
 </ul>
-<h3 id="💻-Wazuh-Agents"><a href="#💻-Wazuh-Agents" class="headerlink" title="💻 Wazuh Agents"></a><strong>💻 Wazuh Agents</strong></h3><ul>
-<li>🪟 Windows 10 endpoint  </li>
-<li>🐧 Ubuntu Desktop endpoint</li>
-</ul>
-<hr>
-<h2 id="⚙️-Installation-Setup-Guide"><a href="#⚙️-Installation-Setup-Guide" class="headerlink" title="⚙️ Installation &amp; Setup Guide"></a>⚙️ Installation &amp; Setup Guide</h2><h3 id="1️⃣-Download-and-run-the-Wazuh-installation-assistant-Ubuntu-Server"><a href="#1️⃣-Download-and-run-the-Wazuh-installation-assistant-Ubuntu-Server" class="headerlink" title="1️⃣ Download and run the Wazuh installation assistant. (Ubuntu Server)"></a><strong>1️⃣ Download and run the Wazuh installation assistant. (Ubuntu Server)</strong></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh &amp;&amp; <span class="built_in">sudo</span> bash ./wazuh-install.sh -a</span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20cerdentials.png" alt="login credentials"></p>
-<h3 id="2️⃣-Login-with-the-generated-credentials"><a href="#2️⃣-Login-with-the-generated-credentials" class="headerlink" title="2️⃣ Login with the generated credentials"></a><strong>2️⃣ Login with the generated credentials</strong></h3><ul>
-<li>The login dashboard with be hosted on 127.0.0.1 by default on port 443</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20wazuh%20login%20page.png" alt="wazuh login page"></p>
-<h3 id="3️⃣-Deploy-new-agent"><a href="#3️⃣-Deploy-new-agent" class="headerlink" title="3️⃣ Deploy new agent"></a><strong>3️⃣ Deploy new agent</strong></h3><ul>
-<li>Click on “Deploy new agent” to add a new agent</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20wazuh%20dashboard.png" alt="deploying new agent through wazuh dashboard"></p>
-<h3 id="4️⃣-Select-the-agent-configuration-Ubuntu-agent"><a href="#4️⃣-Select-the-agent-configuration-Ubuntu-agent" class="headerlink" title="4️⃣ Select the agent configuration (Ubuntu agent)"></a><strong>4️⃣ Select the agent configuration (Ubuntu agent)</strong></h3><ul>
-<li>Select the machine machine architecture and IP address of the wazuh server</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20deploying%20agent.png" alt="selecting the configuration of agent"></p>
-<ul>
-<li>Run the following command in the linux agent that we want to add to wazuh &amp; start the wazuh services</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20starting%20wazuh%20agent.png" alt="the command to run on the linux agent"></p>
-<h3 id="5️⃣-Installing-the-wazuh-agent-on-linux-machine"><a href="#5️⃣-Installing-the-wazuh-agent-on-linux-machine" class="headerlink" title="5️⃣ Installing the wazuh agent on linux machine"></a><strong>5️⃣ Installing the wazuh agent on linux machine</strong></h3><ul>
-<li>Runnning the following custom command to install wazuh agent for our specified server</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Desktop)%20Ubuntu%2064-bit%20installing%20wazuh%20agent.png" alt="installing wazuh agent on linux ubuntu machine"></p>
-<ul>
-<li>Setting up services for wazuh agent to automatically start wazuh everytime we boot up our linux system</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Desktop)%20Ubuntu%2064-bit%20starting%20wazuh%20agent.png" alt="setting up wazuh agent service"></p>
-<h3 id="6️⃣-The-linux-maxhine-will-now-be-added"><a href="#6️⃣-The-linux-maxhine-will-now-be-added" class="headerlink" title="6️⃣ The linux maxhine will now be added!"></a><strong>6️⃣ The linux maxhine will now be added!</strong></h3><ul>
-<li>Now we can monitor our machine from the Wazuh Dashboard</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20wazuh%20agent%20dashboard%20linux%20endpoint%20added.png" alt="linux machine added to wazuh"></p>
-<h3 id="7️⃣-Monitoring-the-Linux-Agent"><a href="#7️⃣-Monitoring-the-Linux-Agent" class="headerlink" title="7️⃣ Monitoring the Linux Agent"></a><strong>7️⃣ Monitoring the Linux Agent</strong></h3><ul>
-<li>Now we can use these amazing wazuh features to easily monitor the agents that we have added <em>(Not only the MITRE ATT&amp;CK Framework and events but muc more to explore on the main dashboard!!)</em></li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20wazuh%20linux%20agent%20dashboard.png" alt="monitoring MITRE ATT&amp;CK dashboard"></p>
-<h3 id="8️⃣-Adding-the-windows-machine-agent"><a href="#8️⃣-Adding-the-windows-machine-agent" class="headerlink" title="8️⃣ Adding the windows machine agent"></a><strong>8️⃣ Adding the windows machine agent</strong></h3><ul>
-<li>The same way we’ll add the windows machine agent by selecting the configurations and the run the custom command from the wazuh server, on the windows agent in Powershell to install the wazuh agent on windows</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Desktop)%20Clone%20of%20Windows%2010%20x64%20open%20pwsh%20as%20admin.png" alt="run pwsh as administrator"></p>
-<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Desktop)%20Clone%20of%20Windows%2010%20x64%20installing%20and%20starting%20wazuh%20agent.png" alt="installing wazuh agent &amp; starting services on windows"></p>
-<h3 id="9️⃣-Now-the-Windows-agent-will-also-be-added-on-the-Wazuh-server-dashboard"><a href="#9️⃣-Now-the-Windows-agent-will-also-be-added-on-the-Wazuh-server-dashboard" class="headerlink" title="9️⃣ Now the Windows agent will also be added on the Wazuh server dashboard"></a><strong>9️⃣ Now the Windows agent will also be added on the Wazuh server dashboard</strong></h3><ul>
-<li>The agent will now be shown in the ‘Endpoints’ section on wazuh server dashboard</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20wazuh%20dashboard%20linux%20and%20windows%20agent%20added.png" alt="windows agent added to wazuh"></p>
-<h3 id="🔟-Now-even-the-windows-endpoint-can-easily-be-monitor-on-the-server-using-Wazuh"><a href="#🔟-Now-even-the-windows-endpoint-can-easily-be-monitor-on-the-server-using-Wazuh" class="headerlink" title="🔟 Now even the windows endpoint can easily be monitor on the server using Wazuh"></a><strong>🔟 Now even the windows endpoint can easily be monitor on the server using Wazuh</strong></h3><ul>
-<li>We can use wazuh to monitor our windows agents from basic vulnerability detection to advanced threat hunting, almost everything!</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20threat%20hunting%20logs%20for%20windows%20agent.png" alt="threat hunting dashboard for windows agent"></p>
-<p><img src="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/lab%20screenshots/(Server)%20Ubuntu%2064-bit%20wazuh%20dashboard%20for%20windows%20agent.png" alt="vulnerability detection dashboard for windows agent"></p>
-<hr>
-<h2 id="🎯-Conclusion"><a href="#🎯-Conclusion" class="headerlink" title="🎯 Conclusion"></a>🎯 Conclusion</h2><p>Setting up this Wazuh SIEM lab has given me real, hands-on experience with endpoint monitoring, threat detection, log analytics, and vulnerability assessment <em>(and much more..)</em> across both Linux and Windows environments. Wazuh is an incredibly powerful and versatile tool that makes it easy to gain deep visibility into your endpoints, detect advanced threats, and analyze security events in real time. By deploying multiple agents and exploring dashboards like MITRE ATT&amp;CK, Threat Hunting, and Vulnerability Detection, I now have a fully functional mini-SOC to sharpen my blue-team skills and understand enterprise-grade security monitoring first-hand.</p>
-<hr>
-<h2 id="📚-Reference"><a href="#📚-Reference" class="headerlink" title="📚 Reference"></a>📚 Reference</h2><p><em>Referred from the</em> <a href="https://documentation.wazuh.com/current/quickstart.html" target="_blank" rel="noopener noreferrer">official Wazuh Quickstart Guide</a><br><br><em>Github Repo</em> <a href="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/README.md">link</a></p>
+<p>📧 Contact: <a href="https://www.linkedin.com/in/gauravnjain/">LinkedIn Profile</a><br>Github Repo: <a href="https://github.com/GauravNJain/FileGuard">link</a> </p>
 ]]></content>
       <categories>
         <category>Projects</category>
-        <category>Wazuh Lab</category>
+        <category>tools</category>
       </categories>
   </entry>
 </search>
