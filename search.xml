@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Welcome to my Portfolio</title>
+    <url>/2026/04/20/welcome/</url>
+    <content><![CDATA[<p>Welcome to my cybersecurity portfolio and blog. This site features writeups from various CTFs, security research projects, and my personal notes.</p>
+<p>The content here is automatically synchronized from my GitHub repositories every 6 hours. </p>
+<p>Use the navigation menu above to explore my <strong>Articles</strong> and <strong>Categories</strong>.</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Wazuh SIEM Local Lab - Complete Setup</title>
-    <url>/2026/05/02/fetched/projects/Lab%20Seups/Wazuh%20SIEM%20Local%20Lab%20-%20Complete%20Setup/</url>
+    <url>/2026/05/03/fetched/projects/Lab%20Setups/Wazuh%20SIEM%20Local%20Lab%20-%20Complete%20Setup/</url>
     <content><![CDATA[<h1 id="🚀-Wazuh-SIEM-Local-Lab-Complete-Setup"><a href="#🚀-Wazuh-SIEM-Local-Lab-Complete-Setup" class="headerlink" title="🚀 Wazuh SIEM Local Lab - Complete Setup"></a>🚀 Wazuh SIEM Local Lab - Complete Setup</h1><p>A hands-on <strong>Wazuh SIEM lab</strong> built locally to learn real-world threat detection, endpoint monitoring, and log analysis.<br>This project includes a complete setup of the Wazuh Manager, Dashboard, and multiple endpoint agents, giving me a full mini-SOC environment to practice cybersecurity operations.</p>
 <blockquote>
 <p>🔥 <strong>Goal:</strong> Build my own SIEM environment, understand endpoint telemetry, and explore how Wazuh strengthens visibility, detection, and response.</p>
@@ -79,61 +87,8 @@
 ]]></content>
       <categories>
         <category>Projects</category>
-        <category>Lab Seups</category>
+        <category>Lab Setups</category>
       </categories>
-  </entry>
-  <entry>
-    <title>FileGuard - File Hash Checker</title>
-    <url>/2026/05/02/fetched/projects/tools/FileGuard%20-%20File%20Hash%20Checker/</url>
-    <content><![CDATA[<p align="center">
-  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardASCII.png" alt="File Hash Checker Logo" width="875">
-</p>
-
-<h1 id="🔐-FileGuard-File-Hash-Checker"><a href="#🔐-FileGuard-File-Hash-Checker" class="headerlink" title="🔐 FileGuard - File Hash Checker"></a>🔐 FileGuard - File Hash Checker</h1><p>A simple shell script tool to <strong>generate file hashes</strong> and <strong>verify file integrity</strong>.</p>
-<hr>
-<h3 id="📌-About"><a href="#📌-About" class="headerlink" title="📌 About"></a>📌 About</h3><p><strong>File Hash Checker</strong> is a lightweight and easy-to-use tool that allows users to:  </p>
-<p>🔍 <strong>Generate file hashes</strong> using <strong>MD5, SHA1, or SHA256</strong>.<br>✅ <strong>Verify file integrity</strong> by comparing the hash of the original and copied files.  </p>
-<hr>
-<h3 id="🚀-Features"><a href="#🚀-Features" class="headerlink" title="🚀 Features"></a>🚀 Features</h3><p>📜 <strong>Menu-based interface</strong> for easy navigation.<br>🔄 <strong>Supports multiple hashing algorithms</strong>: MD5, SHA1, SHA256.<br>⚠️ <strong>Error handling</strong> for missing files and invalid inputs.  </p>
-<hr>
-<h3 id="🛠-Installation"><a href="#🛠-Installation" class="headerlink" title="🛠 Installation"></a>🛠 Installation</h3><p>Clone the repository and give the script execution permissions:  </p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/GauravNJain/FileGuard.git</span><br><span class="line">cd FileGuard</span><br><span class="line">chmod +x flieguard.sh</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="🏃-Usage"><a href="#🏃-Usage" class="headerlink" title="🏃 Usage"></a>🏃 Usage</h3><p>Run the script:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./fileguard.sh</span><br></pre></td></tr></table></figure>
-<p>Follow the menu options to generate hashes or verify file integrity.</p>
-<hr>
-<h3 id="🖼️-Screenshots"><a href="#🖼️-Screenshots" class="headerlink" title="🖼️ Screenshots"></a>🖼️ Screenshots</h3><p>Here are some screenshots of the tool in action:</p>
-<p>🔢 Generating a file hash:</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardGenHash.png" alt="File Hash Checker Logo" width="450">
-</p>
-
-
-<p>🔍 Verifying file integrity:</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardIntCheck.png" alt="File Hash Checker Logo" width="450">
-</p>
-
-<hr>
-<h3 id="👤-Author"><a href="#👤-Author" class="headerlink" title="👤 Author"></a>👤 Author</h3><ul>
-<li>Developed by Gaurav N Jain</li>
-</ul>
-<p>📧 Contact: <a href="https://www.linkedin.com/in/gauravnjain/">LinkedIn Profile</a><br>Github Repo: <a href="https://github.com/GauravNJain/FileGuard">link</a> </p>
-]]></content>
-      <categories>
-        <category>Projects</category>
-        <category>tools</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Welcome to my Portfolio</title>
-    <url>/2026/04/20/welcome/</url>
-    <content><![CDATA[<p>Welcome to my cybersecurity portfolio and blog. This site features writeups from various CTFs, security research projects, and my personal notes.</p>
-<p>The content here is automatically synchronized from my GitHub repositories every 6 hours. </p>
-<p>Use the navigation menu above to explore my <strong>Articles</strong> and <strong>Categories</strong>.</p>
-]]></content>
   </entry>
   <entry>
     <title>NetWizard++ - A network enumeration and penetration testing toolkit</title>
@@ -225,6 +180,51 @@
 <li>Developed by Gaurav N Jain</li>
 </ul>
 <p>📧 Contact: <a href="https://www.linkedin.com/in/gauravnjain/">LinkedIn Profile</a><br><br>Github: <a href="https://github.com/GauravNJain/Netwizard-plusplus/">repo link</a></p>
+]]></content>
+      <categories>
+        <category>Projects</category>
+        <category>tools</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>FileGuard - File Hash Checker</title>
+    <url>/2026/05/02/fetched/projects/tools/FileGuard%20-%20File%20Hash%20Checker/</url>
+    <content><![CDATA[<p align="center">
+  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardASCII.png" alt="File Hash Checker Logo" width="875">
+</p>
+
+<h1 id="🔐-FileGuard-File-Hash-Checker"><a href="#🔐-FileGuard-File-Hash-Checker" class="headerlink" title="🔐 FileGuard - File Hash Checker"></a>🔐 FileGuard - File Hash Checker</h1><p>A simple shell script tool to <strong>generate file hashes</strong> and <strong>verify file integrity</strong>.</p>
+<hr>
+<h3 id="📌-About"><a href="#📌-About" class="headerlink" title="📌 About"></a>📌 About</h3><p><strong>File Hash Checker</strong> is a lightweight and easy-to-use tool that allows users to:  </p>
+<p>🔍 <strong>Generate file hashes</strong> using <strong>MD5, SHA1, or SHA256</strong>.<br>✅ <strong>Verify file integrity</strong> by comparing the hash of the original and copied files.  </p>
+<hr>
+<h3 id="🚀-Features"><a href="#🚀-Features" class="headerlink" title="🚀 Features"></a>🚀 Features</h3><p>📜 <strong>Menu-based interface</strong> for easy navigation.<br>🔄 <strong>Supports multiple hashing algorithms</strong>: MD5, SHA1, SHA256.<br>⚠️ <strong>Error handling</strong> for missing files and invalid inputs.  </p>
+<hr>
+<h3 id="🛠-Installation"><a href="#🛠-Installation" class="headerlink" title="🛠 Installation"></a>🛠 Installation</h3><p>Clone the repository and give the script execution permissions:  </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/GauravNJain/FileGuard.git</span><br><span class="line">cd FileGuard</span><br><span class="line">chmod +x flieguard.sh</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="🏃-Usage"><a href="#🏃-Usage" class="headerlink" title="🏃 Usage"></a>🏃 Usage</h3><p>Run the script:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./fileguard.sh</span><br></pre></td></tr></table></figure>
+<p>Follow the menu options to generate hashes or verify file integrity.</p>
+<hr>
+<h3 id="🖼️-Screenshots"><a href="#🖼️-Screenshots" class="headerlink" title="🖼️ Screenshots"></a>🖼️ Screenshots</h3><p>Here are some screenshots of the tool in action:</p>
+<p>🔢 Generating a file hash:</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardGenHash.png" alt="File Hash Checker Logo" width="450">
+</p>
+
+
+<p>🔍 Verifying file integrity:</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/GauravNJain/FileGuard/main/imgs/FileGuardIntCheck.png" alt="File Hash Checker Logo" width="450">
+</p>
+
+<hr>
+<h3 id="👤-Author"><a href="#👤-Author" class="headerlink" title="👤 Author"></a>👤 Author</h3><ul>
+<li>Developed by Gaurav N Jain</li>
+</ul>
+<p>📧 Contact: <a href="https://www.linkedin.com/in/gauravnjain/">LinkedIn Profile</a><br>Github Repo: <a href="https://github.com/GauravNJain/FileGuard">link</a> </p>
 ]]></content>
       <categories>
         <category>Projects</category>
