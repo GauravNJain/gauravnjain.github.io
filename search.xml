@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Welcome to my Portfolio</title>
-    <url>/2026/04/20/welcome/</url>
-    <content><![CDATA[<p>Welcome to my cybersecurity portfolio and blog. This site features writeups from various CTFs, security research projects, and my personal notes.</p>
-<p>The content here is automatically synchronized from my GitHub repositories every 6 hours. </p>
-<p>Use the navigation menu above to explore my <strong>Articles</strong> and <strong>Categories</strong>.</p>
+    <title>writeup</title>
+    <url>/2026/05/04/fetched/ctf/CTF/writeup/</url>
+    <content><![CDATA[<h1 id="Participation-history"><a href="#Participation-history" class="headerlink" title="Participation history:"></a>Participation history:</h1><p>well there are no writeups yet you can still view some info about the CTFs I participated in…</p>
+<ul>
+<li>CTFtime (a platform where CTFs are listed along with the leaderboard): <a href="https://ctftime.org/team/422926">https://ctftime.org/team/422926</a> (team history for the team I lead and compete with)</li>
+<li>Linkedin (I have certs and other stuff uploaded bout the CTFs I recently participated in): <a href="https://www.linkedin.com/in/GauravNJain">https://www.linkedin.com/in/GauravNJain</a></li>
+<li>find more here: <a href="https://gauravnjain.github.io/about/">about page</a> and <a href="https://gauravnjain.github.io/links/">links</a></li>
+</ul>
 ]]></content>
+      <categories>
+        <category>CTF Writeups</category>
+        <category>CTF</category>
+      </categories>
   </entry>
   <entry>
     <title>FileGuard - File Hash Checker</title>
@@ -52,6 +59,14 @@
         <category>Projects</category>
         <category>tools</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Welcome to my Portfolio</title>
+    <url>/2026/04/20/welcome/</url>
+    <content><![CDATA[<p>Welcome to my cybersecurity portfolio and blog. This site features writeups from various CTFs, security research projects, and my personal notes.</p>
+<p>The content here is automatically synchronized from my GitHub repositories every 6 hours. </p>
+<p>Use the navigation menu above to explore my <strong>Articles</strong> and <strong>Categories</strong>.</p>
+]]></content>
   </entry>
   <entry>
     <title>Wazuh SIEM Local Lab - Complete Setup</title>
@@ -229,21 +244,6 @@
       <categories>
         <category>Projects</category>
         <category>tools</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>writeup</title>
-    <url>/2026/05/04/fetched/ctf/CTF/writeup/</url>
-    <content><![CDATA[<h1 id="Participation-history"><a href="#Participation-history" class="headerlink" title="Participation history:"></a>Participation history:</h1><p>well there are no writeups yet you can still view some info about the CTFs I participated in…</p>
-<ul>
-<li>CTFtime (a platform where CTFs are listed along with the leaderboard): <a href="https://ctftime.org/team/422926">https://ctftime.org/team/422926</a> (team history for the team I lead and compete with)</li>
-<li>Linkedin (I have certs and other stuff uploaded bout the CTFs I recently participated in): <a href="https://www.linkedin.com/in/GauravNJain">https://www.linkedin.com/in/GauravNJain</a></li>
-<li>find more here: <a href="https://gauravnjain.github.io/about/">about page</a> and <a href="https://gauravnjain.github.io/links/">links</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>CTF Writeups</category>
-        <category>CTF</category>
       </categories>
   </entry>
 </search>
