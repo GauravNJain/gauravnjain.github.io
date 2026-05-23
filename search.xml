@@ -143,6 +143,14 @@
       </categories>
   </entry>
   <entry>
+    <title>Welcome to my Portfolio</title>
+    <url>/2026/04/20/welcome/</url>
+    <content><![CDATA[<p>Welcome to my cybersecurity portfolio and blog. This site features writeups from various CTFs, security research projects, and my personal notes.</p>
+<p>The content here is automatically synchronized from my GitHub repositories every 6 hours. </p>
+<p>Use the navigation menu above to explore my <strong>Articles</strong> and <strong>Categories</strong>.</p>
+]]></content>
+  </entry>
+  <entry>
     <title>NetWizard++ - A network enumeration and penetration testing toolkit</title>
     <url>/2026/05/01/fetched/projects/tools/NetWizard++%20-%20A%20network%20enumeration%20and%20penetration%20testing%20toolkit/</url>
     <content><![CDATA[<p align="center">
@@ -237,13 +245,5 @@
         <category>Projects</category>
         <category>tools</category>
       </categories>
-  </entry>
-  <entry>
-    <title>Welcome to my Portfolio</title>
-    <url>/2026/04/20/welcome/</url>
-    <content><![CDATA[<p>Welcome to my cybersecurity portfolio and blog. This site features writeups from various CTFs, security research projects, and my personal notes.</p>
-<p>The content here is automatically synchronized from my GitHub repositories every 6 hours. </p>
-<p>Use the navigation menu above to explore my <strong>Articles</strong> and <strong>Categories</strong>.</p>
-]]></content>
   </entry>
 </search>
