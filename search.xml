@@ -91,6 +91,21 @@
       </categories>
   </entry>
   <entry>
+    <title>writeup</title>
+    <url>/2026/05/06/fetched/ctf/CTF/writeup/</url>
+    <content><![CDATA[<h1 id="Participation-history"><a href="#Participation-history" class="headerlink" title="Participation history:"></a>Participation history:</h1><p>well there are no writeups yet you can still view some info about the recent CTFs I participated in…</p>
+<ul>
+<li><strong>CTFtime</strong> <em>(a platform where CTFs are listed along with the leaderboard)</em>: <a href="https://ctftime.org/team/422926">https://ctftime.org/team/422926</a> <em>(team history for the team I lead and compete with)</em></li>
+<li><strong>Linkedin</strong> <em>(I have certs and other stuff uploaded about the CTFs I recently participated in)</em>: <a href="https://www.linkedin.com/in/GauravNJain">https://www.linkedin.com/in/GauravNJain</a></li>
+<li><strong>find more here</strong>: <a href="https://gauravnjain.github.io/about/">about page</a> and <a href="https://gauravnjain.github.io/links/">links</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>CTF Writeups</category>
+        <category>CTF</category>
+      </categories>
+  </entry>
+  <entry>
     <title>FileGuard - File Hash Checker</title>
     <url>/2026/05/02/fetched/projects/tools/FileGuard%20-%20File%20Hash%20Checker/</url>
     <content><![CDATA[<p align="center">
@@ -229,21 +244,6 @@
       <categories>
         <category>Projects</category>
         <category>tools</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>writeup</title>
-    <url>/2026/05/06/fetched/ctf/CTF/writeup/</url>
-    <content><![CDATA[<h1 id="Participation-history"><a href="#Participation-history" class="headerlink" title="Participation history:"></a>Participation history:</h1><p>well there are no writeups yet you can still view some info about the recent CTFs I participated in…</p>
-<ul>
-<li><strong>CTFtime</strong> <em>(a platform where CTFs are listed along with the leaderboard)</em>: <a href="https://ctftime.org/team/422926">https://ctftime.org/team/422926</a> <em>(team history for the team I lead and compete with)</em></li>
-<li><strong>Linkedin</strong> <em>(I have certs and other stuff uploaded about the CTFs I recently participated in)</em>: <a href="https://www.linkedin.com/in/GauravNJain">https://www.linkedin.com/in/GauravNJain</a></li>
-<li><strong>find more here</strong>: <a href="https://gauravnjain.github.io/about/">about page</a> and <a href="https://gauravnjain.github.io/links/">links</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>CTF Writeups</category>
-        <category>CTF</category>
       </categories>
   </entry>
 </search>
