@@ -3,6 +3,8 @@ title: About
 layout: about
 ---
 
+![About Banner](/images/about_banner.png)
+
 ## Bio
 Just a cool kid with a computer : )
 
