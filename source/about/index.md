@@ -56,4 +56,3 @@ Awarded **[Certificate of Merit](https://www.linkedin.com/posts/gauravnjain_brea
 ## Social Links
 *   [GitHub](https://github.com/GauravNJain)
 *   [LinkedIn](https://linkedin.com/in/GauravNJain)
-*   [CTFtime](https://ctftime.org/user/251067)
