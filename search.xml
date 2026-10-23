@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Welcome to my Portfolio</title>
-    <url>/2026/04/20/welcome/</url>
-    <content><![CDATA[<p>Welcome to my cybersecurity portfolio and blog. This site features writeups from various CTFs, security research projects, and my personal notes.</p>
-<p>The content here is automatically synchronized from my GitHub repositories every 6 hours. </p>
-<p>Use the navigation menu above to explore my <strong>Articles</strong> and <strong>Categories</strong>.</p>
-]]></content>
-  </entry>
-  <entry>
     <title>writeup</title>
     <url>/2026/05/06/fetched/ctf/CTF/writeup/</url>
     <content><![CDATA[<h1 id="Participation-history"><a href="#Participation-history" class="headerlink" title="Participation history:"></a>Participation history:</h1><p>well there are no writeups yet you can still view some info about the recent CTFs I participated in…</p>
@@ -22,6 +14,14 @@
         <category>CTF Writeups</category>
         <category>CTF</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Welcome to my Portfolio</title>
+    <url>/2026/04/20/welcome/</url>
+    <content><![CDATA[<p>Welcome to my cybersecurity portfolio and blog. This site features writeups from various CTFs, security research projects, and my personal notes.</p>
+<p>The content here is automatically synchronized from my GitHub repositories every 6 hours. </p>
+<p>Use the navigation menu above to explore my <strong>Articles</strong> and <strong>Categories</strong>.</p>
+]]></content>
   </entry>
   <entry>
     <title>Wazuh SIEM Local Lab - Complete Setup</title>
@@ -103,6 +103,16 @@
       <categories>
         <category>Projects</category>
         <category>Lab Setups</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>raspberry pi</title>
+    <url>/2026/10/14/fetched/projects/pending/raspberry%20pi/</url>
+    <content><![CDATA[<p>well, there are a few projects that I have been working on for quite some while now but the write-ups are still pending<br>  I’ll publish them once I am free : )</p>
+]]></content>
+      <categories>
+        <category>Projects</category>
+        <category>pending</category>
       </categories>
   </entry>
   <entry>
@@ -1058,16 +1068,6 @@
       <categories>
         <category>Projects</category>
         <category>Hackathons</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>raspberry pi</title>
-    <url>/2026/10/14/fetched/projects/pending/raspberry%20pi/</url>
-    <content><![CDATA[<p>well, there are a few projects that I have been working on for quite some while now but the write-ups are still pending<br>  I’ll publish them once I am free : )</p>
-]]></content>
-      <categories>
-        <category>Projects</category>
-        <category>pending</category>
       </categories>
   </entry>
   <entry>
