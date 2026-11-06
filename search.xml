@@ -1116,16 +1116,6 @@
       </categories>
   </entry>
   <entry>
-    <title>raspberry pi</title>
-    <url>/2026/10/14/fetched/projects/pending/raspberry%20pi/</url>
-    <content><![CDATA[<p>well, there are a few projects that I have been working on for quite some while now but the write-ups are still pending<br>  I’ll publish them once I am free : )</p>
-]]></content>
-      <categories>
-        <category>Projects</category>
-        <category>pending</category>
-      </categories>
-  </entry>
-  <entry>
     <title>NetWizard++ - A network enumeration and penetration testing toolkit</title>
     <url>/2026/05/01/fetched/projects/tools/NetWizard++%20-%20A%20network%20enumeration%20and%20penetration%20testing%20toolkit/</url>
     <content><![CDATA[<p align="center">
@@ -1219,6 +1209,16 @@
       <categories>
         <category>Projects</category>
         <category>tools</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>raspberry pi</title>
+    <url>/2026/10/14/fetched/projects/pending/raspberry%20pi/</url>
+    <content><![CDATA[<p>well, there are a few projects that I have been working on for quite some while now but the write-ups are still pending<br>  I’ll publish them once I am free : )</p>
+]]></content>
+      <categories>
+        <category>Projects</category>
+        <category>pending</category>
       </categories>
   </entry>
 </search>
