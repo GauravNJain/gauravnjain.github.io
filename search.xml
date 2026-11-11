@@ -979,16 +979,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Microsoft Active Directory - Lab Setup</title>
-    <url>/2026/11/03/fetched/projects/Lab%20Setups/Microsoft%20Active%20Directory%20-%20Lab%20Setup/</url>
-    <content><![CDATA[<p>well i didn’t document the whole process but here’s a cool linkedin post about it <a href="https://lnkd.in/p/dhNVuPEB">click here to visit the post</a> : )</p>
-]]></content>
-      <categories>
-        <category>Projects</category>
-        <category>Lab Setups</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Wazuh SIEM Local Lab - Complete Setup</title>
     <url>/2026/05/03/fetched/projects/Lab%20Setups/Wazuh%20SIEM%20Local%20Lab%20-%20Complete%20Setup/</url>
     <content><![CDATA[<h1 id="🚀-Wazuh-SIEM-Local-Lab-Complete-Setup"><a href="#🚀-Wazuh-SIEM-Local-Lab-Complete-Setup" class="headerlink" title="🚀 Wazuh SIEM Local Lab - Complete Setup"></a>🚀 Wazuh SIEM Local Lab - Complete Setup</h1><p>A hands-on <strong>Wazuh SIEM lab</strong> built locally to learn real-world threat detection, endpoint monitoring, and log analysis.<br>This project includes a complete setup of the Wazuh Manager, Dashboard, and multiple endpoint agents, giving me a full mini-SOC environment to practice cybersecurity operations.</p>
@@ -1064,6 +1054,16 @@
 <h2 id="🎯-Conclusion"><a href="#🎯-Conclusion" class="headerlink" title="🎯 Conclusion"></a>🎯 Conclusion</h2><p>Setting up this Wazuh SIEM lab has given me real, hands-on experience with endpoint monitoring, threat detection, log analytics, and vulnerability assessment <em>(and much more..)</em> across both Linux and Windows environments. Wazuh is an incredibly powerful and versatile tool that makes it easy to gain deep visibility into your endpoints, detect advanced threats, and analyze security events in real time. By deploying multiple agents and exploring dashboards like MITRE ATT&amp;CK, Threat Hunting, and Vulnerability Detection, I now have a fully functional mini-SOC to sharpen my blue-team skills and understand enterprise-grade security monitoring first-hand.</p>
 <hr>
 <h2 id="📚-Reference"><a href="#📚-Reference" class="headerlink" title="📚 Reference"></a>📚 Reference</h2><p><em>Referred from the</em> <a href="https://documentation.wazuh.com/current/quickstart.html" target="_blank" rel="noopener noreferrer">official Wazuh Quickstart Guide</a><br><br><em>Github Repo</em> <a href="https://raw.githubusercontent.com/GauravNJain/Wazuh-Lab-Setup/main/README.md">link</a></p>
+]]></content>
+      <categories>
+        <category>Projects</category>
+        <category>Lab Setups</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Microsoft Active Directory - Lab Setup</title>
+    <url>/2026/11/03/fetched/projects/Lab%20Setups/Microsoft%20Active%20Directory%20-%20Lab%20Setup/</url>
+    <content><![CDATA[<p>well i didn’t document the whole process but here’s a cool linkedin post about it <a href="https://lnkd.in/p/dhNVuPEB">click here to visit the post</a> : )</p>
 ]]></content>
       <categories>
         <category>Projects</category>
