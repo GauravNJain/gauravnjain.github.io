@@ -9,31 +9,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>writeup</title>
-    <url>/2026/05/06/fetched/ctf/CTF/writeup/</url>
-    <content><![CDATA[<h1 id="Participation-history"><a href="#Participation-history" class="headerlink" title="Participation history:"></a>Participation history:</h1><p>well there are no writeups yet you can still view some info about the recent CTFs I participated in…</p>
-<ul>
-<li><strong>CTFtime</strong> <em>(a platform where CTFs are listed along with the leaderboard)</em>: <a href="https://ctftime.org/team/422926">https://ctftime.org/team/422926</a> <em>(team history for the team I lead and compete with)</em></li>
-<li><strong>Linkedin</strong> <em>(I have certs and other stuff uploaded about the CTFs I recently participated in)</em>: <a href="https://www.linkedin.com/in/GauravNJain">https://www.linkedin.com/in/GauravNJain</a></li>
-<li><strong>find more here</strong>: <a href="https://gauravnjain.github.io/about/">about page</a> and <a href="https://gauravnjain.github.io/links/">links</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>CTF Writeups</category>
-        <category>CTF</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Microsoft Active Directory - Lab Setup</title>
-    <url>/2026/11/03/fetched/projects/Lab%20Setups/Microsoft%20Active%20Directory%20-%20Lab%20Setup/</url>
-    <content><![CDATA[<p>well i didn’t document the whole process but here’s a cool linkedin post about it <a href="https://lnkd.in/p/dhNVuPEB">click here to visit the post</a> : )</p>
-]]></content>
-      <categories>
-        <category>Projects</category>
-        <category>Lab Setups</category>
-      </categories>
-  </entry>
-  <entry>
     <title>CrimeGPT - AI powered crime documentation legal intelligence platform</title>
     <url>/2026/10/14/fetched/projects/Hackathons/CrimeGPT%20-%20AI%20powered%20crime%20documentation%20legal%20intelligence%20platform/</url>
     <content><![CDATA[<div align="center">
@@ -986,6 +961,31 @@
       <categories>
         <category>Projects</category>
         <category>Hackathons</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Microsoft Active Directory - Lab Setup</title>
+    <url>/2026/11/03/fetched/projects/Lab%20Setups/Microsoft%20Active%20Directory%20-%20Lab%20Setup/</url>
+    <content><![CDATA[<p>well i didn’t document the whole process but here’s a cool linkedin post about it <a href="https://lnkd.in/p/dhNVuPEB">click here to visit the post</a> : )</p>
+]]></content>
+      <categories>
+        <category>Projects</category>
+        <category>Lab Setups</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>writeup</title>
+    <url>/2026/05/06/fetched/ctf/CTF/writeup/</url>
+    <content><![CDATA[<h1 id="Participation-history"><a href="#Participation-history" class="headerlink" title="Participation history:"></a>Participation history:</h1><p>well there are no writeups yet you can still view some info about the recent CTFs I participated in…</p>
+<ul>
+<li><strong>CTFtime</strong> <em>(a platform where CTFs are listed along with the leaderboard)</em>: <a href="https://ctftime.org/team/422926">https://ctftime.org/team/422926</a> <em>(team history for the team I lead and compete with)</em></li>
+<li><strong>Linkedin</strong> <em>(I have certs and other stuff uploaded about the CTFs I recently participated in)</em>: <a href="https://www.linkedin.com/in/GauravNJain">https://www.linkedin.com/in/GauravNJain</a></li>
+<li><strong>find more here</strong>: <a href="https://gauravnjain.github.io/about/">about page</a> and <a href="https://gauravnjain.github.io/links/">links</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>CTF Writeups</category>
+        <category>CTF</category>
       </categories>
   </entry>
   <entry>
